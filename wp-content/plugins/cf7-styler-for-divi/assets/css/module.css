@@ -1,0 +1,30 @@
+.et-db #et-boc .et-l .et-fb-modules-list li[class^="dvppl"]:hover,
+.et-db #et-boc .et-l .et-fb-modules-list li[class^="dvppl"]:focus,
+.et-db #et-boc .et-l .et-fb-modules-list li[class^="dvppl"]:active {
+    background: rgba(226, 73, 138, 0.9) !important;
+    color: #fff;
+}
+
+.et-db #et-boc .et-l .et-fb-modules-list li[class^="dvppl"] {
+    font-size: 12px;
+    color: #fff;
+    background: #562cd4 !important;
+}
+
+.et-db #et-boc .et-l .et-fb-modules-list li[class^="dvppl"]:before {
+    color: #fff;
+}
+
+.et-db #et-boc .et-l .et-fb-modules-list li[class^="dvppl"] .et-fb-icon.et-fb-icon--svg {
+    fill: #fff !important;
+    width: 16px !important;
+    min-width: 16px !important;
+    height: 16px !important;
+    margin: 2px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.et-tb #et-boc .et-l [class*="dvppl_"].et_pb_module .et-waypoint:not(.et_pb_counters) {
+    opacity: 1 !important;
+}

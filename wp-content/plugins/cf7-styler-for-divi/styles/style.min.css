@@ -1,0 +1,246 @@
+.dipe-cf7 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.dipe-cf7 .wpcf7 form {
+    position: relative
+}
+
+.dipe-cf7 .wpcf7-form .wpcf7-submit {
+    display: block !important
+}
+
+.dipe-cf7 .wpcf7 form .dp-col>label,
+.dipe-cf7 .wpcf7 form>label {
+    display: block
+}
+
+.dipe-cf7 .wpcf7 .dipe-cf7 .wpcf7-control-wrap {
+    width: 100%;
+    display: block
+}
+
+.dipe-cf7 .wpcf7 input:not([type=submit]):focus,
+.dipe-cf7 .wpcf7 select:focus,
+.dipe-cf7 .wpcf7 textarea:focus {
+    border-color: #eaeaea;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.dipe-cf7 .wpcf7 input:not([type=submit]):not([type=checkbox]):not([type=radio]),
+.dipe-cf7 .wpcf7 select,
+.dipe-cf7 .wpcf7 textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: .75em;
+    border-style: solid
+}
+
+.dipe-cf7 .wpcf7 input[type=file] {
+    color: #666;
+    height: auto;
+    border: 1px solid #eaeaea;
+    background: #fafafa;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.dipe-cf7.dipe-cf7-cr .wpcf7 input[type=checkbox],
+.dipe-cf7.dipe-cf7-cr .wpcf7 input[type=radio] {
+    display: inline-block;
+    position: relative;
+    visibility: hidden;
+    clear: none;
+    cursor: pointer;
+    line-height: 0;
+    height: 1.2em;
+    margin: -3px 4px 0 0;
+    outline: 0;
+    padding: 0;
+    border-radius: .2em;
+    text-align: center;
+    vertical-align: middle;
+    width: 1.4em;
+    min-width: 1.4em;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.dipe-cf7 input[type=range] {
+    background: 0 0 !important;
+    border: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important
+}
+
+.dipe-cf7.dipe-cf7-cr .wpcf7-acceptance input[type=checkbox]+span:before,
+.dipe-cf7.dipe-cf7-cr .wpcf7-acceptance input[type=checkbox]:checked+span:before,
+.dipe-cf7.dipe-cf7-cr .wpcf7-checkbox input[type=checkbox]+span:before,
+.dipe-cf7.dipe-cf7-cr .wpcf7-checkbox input[type=checkbox]:checked+span:before,
+.dipe-cf7.dipe-cf7-cr .wpcf7-radio input[type=radio]+span:before {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+.dipe-cf7.dipe-cf7-cr .wpcf7-acceptance input[type=checkbox],
+.dipe-cf7.dipe-cf7-cr .wpcf7-checkbox input[type=checkbox],
+.dipe-cf7.dipe-cf7-cr .wpcf7-radio input[type=radio] {
+    display: none
+}
+
+.dipe-cf7.dipe-cf7-cr .wpcf7-acceptance input[type=checkbox]+span:before,
+.dipe-cf7.dipe-cf7-cr .wpcf7-checkbox input[type=checkbox]+span:before,
+.dipe-cf7.dipe-cf7-cr .wpcf7-radio input[type=radio]:not(:checked)+span:before {
+    background-color: #fff
+}
+
+.dipe-cf7.dipe-cf7-cr .wpcf7-acceptance input[type=checkbox]+span:before,
+.dipe-cf7.dipe-cf7-cr .wpcf7-checkbox input[type=checkbox]+span:before,
+.dipe-cf7.dipe-cf7-cr .wpcf7-radio input[type=radio]+span:before {
+    border: 1px solid #d1d8de;
+    width: 14px;
+    height: 14px
+}
+
+.dipe-cf7.dipe-cf7-cr .wpcf7-radio input[type=radio]:checked+span:before {
+    -webkit-box-shadow: inset 0 0 0 4px #fff;
+    box-shadow: inset 0 0 0 4px #fff
+}
+
+.dipe-cf7.dipe-cf7-cr .wpcf7-radio input[type=radio]+span:before {
+    border-radius: 100%;
+    background-color: #d1d8de
+}
+
+.dipe-cf7.dipe-cf7-cr .wpcf7-acceptance input[type=checkbox]+span:before,
+.dipe-cf7.dipe-cf7-cr .wpcf7-checkbox input[type=checkbox]+span:before,
+.dipe-cf7.dipe-cf7-cr .wpcf7-radio input[type=radio]+span:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    text-align: center
+}
+
+.dipe-cf7.dipe-cf7-cr .wpcf7-acceptance input[type=checkbox]:checked+span:before,
+.dipe-cf7.dipe-cf7-cr .wpcf7-checkbox input[type=checkbox]:checked+span:before {
+    content: "\2714";
+    line-height: 1.2
+}
+
+.dipe-cf7-button-center input.wpcf7-form-control.wpcf7-submit,
+.dipe-cf7-button-justify input.wpcf7-form-control.wpcf7-submit,
+.dipe-cf7-button-left input.wpcf7-form-control.wpcf7-submit,
+.dipe-cf7-button-right input.wpcf7-form-control.wpcf7-submit {
+    display: -ms-flexbox;
+    -js-display: flex;
+    display: flex;
+    width: auto
+}
+
+.dipe-cf7 .wpcf7 input[type=submit] {
+    font-size: 14px;
+    letter-spacing: .6px;
+    width: auto;
+    font-size: 16px;
+    padding: 10px 22px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #2ea3f2;
+    color: #fff;
+    background-color: #2ea3f2;
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+.dipe-cf7 .wpcf7 input[type=submit][disabled] {
+    cursor: not-allowed
+}
+
+.dipe-cf7 .wpcf7 div.wpcf7-response-output {
+    margin: 0
+}
+
+@media only screen and (min-width:769px) {
+    .dipe-cf7-col,
+    .dvppl-cf7-col {
+        display: -ms-flexbox;
+        display: flex
+    }
+    .dipe-cf7-col>p,
+    .dipe-cf7-col>span,
+    .dipe-cf7-col label,
+    .dvppl-cf7-col>p,
+    .dvppl-cf7-col>span,
+    .dvppl-cf7-col label {
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        padding: 0 10px
+    }
+}
+
+.dipe-form-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.dipe-form-header-icon,
+.dipe-form-header-image {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: auto 0;
+    flex: auto 0;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 50% 50%
+}
+
+.dipe-form-header-icon span {
+    font-size: 32px !important
+}
+
+.dipe-form-header-title {
+    font-size: 32px;
+    font-weight: 600
+}
+
+.dipe-form-header-text {
+    margin-top: 8px;
+    opacity: .7;
+    font-size: 15px
+}
+
+.dipe-cf7-button-center .wpcf7-form button.wpcf7-submit,
+.dipe-cf7-button-center .wpcf7-form input[type=submit] {
+    margin-left: auto !important;
+    margin-right: auto !important
+}
+
+.dipe-cf7-button-right .wpcf7-form button.wpcf7-submit,
+.dipe-cf7-button-right .wpcf7-form input[type=submit] {
+    margin-left: auto !important
+}
+
+.dipe-cf7-button-left .wpcf7-form button.wpcf7-submit,
+.dipe-cf7-button-left .wpcf7-form input[type=submit] {
+    margin-right: auto !important
+}
