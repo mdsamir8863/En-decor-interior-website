@@ -292,7 +292,7 @@ p {
     }
 
     .dm-branding {
-        left: 20px !important;
+        left: 0px !important;
         top: 0px !important
     }
 
@@ -310,7 +310,7 @@ p {
     #dm-logo,
     .logo-scroll {
         max-height: 60px;
-        max-width: 200px !important
+        max-width: 150px !important
     }
 
     #dm-menu.nav li {
