@@ -282,6 +282,17 @@
         src: url(https://fonts.gstatic.com/s/opensans/v36/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2)
           format("woff2");
       }
+      @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
     </style>
     <meta
       name="robots"
@@ -331,7 +342,7 @@
     <title>Home En-Decor</title>
     <meta
       name="description"
-      content="Luxury residential retreats that celebrate modern architecture and embody the future of elevated living."
+      content=""Elevate Your Spaces with En-decor: Where Dreams Take Shape."
     />
     <!-- <link rel="canonical" href="https://www.bmaarchitects.com/" /> -->
     <meta property="og:locale" content="en_US" />
@@ -339,7 +350,7 @@
     <meta property="og:title" content="Home - En-Decor" />
     <meta
       property="og:description"
-      content="Luxury residential retreats that celebrate modern architecture and embody the future of elevated living."
+      content=""Elevate Your Spaces with En-decor: Where Dreams Take Shape."
     />
     <meta property="og:site_name" content="En-Decor" />
     <!-- <meta
@@ -371,7 +382,7 @@
             "thumbnailUrl": "https://www.bmaarchitects.com/wp-content/uploads/2022/08/BMA-Architects_Logo-Stacked_Orange.png",
             "datePublished": "2021-03-15T20:54:35+00:00",
             "dateModified": "2022-12-22T17:51:20+00:00",
-            "description": "Luxury residential retreats that celebrate modern architecture and embody the future of elevated living.",
+            "description": ""Elevate Your Spaces with En-decor: Where Dreams Take Shape.",
             "breadcrumb": {
               "@id": "https://www.bmaarchitects.com/#breadcrumb"
             },
@@ -9333,9 +9344,13 @@
           url("https://blazema.wpengine.com/wp-content/uploads/et-fonts/Avenir-Medium-09.otf")
             format("opentype");
       }
+
+      /* sbme add krna he isko */
       .et_pb_slider .et_pb_slide_0.et_pb_slide > .et_pb_container {
-        max-width: 432px;
+        max-width: 562px;
       }
+
+
       .et_pb_slide_0 .et_pb_slide_description {
         text-shadow: none !important;
       }
@@ -9809,6 +9824,11 @@
       href="./wp-content/et-cache/2/et-core-unified-tb-427-tb-32-deferred-2.min.css"
       onload="this.onload=null;this.rel='stylesheet';"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body
     data-rsssl="1"
@@ -9955,10 +9975,10 @@
       </div>
       <button
         id="open-button"
-        class="hamburger menu-button hamburger--spin"
+        class="hamburger menu-button hamburger--spin border outline-none"
         type="button"
+        style="outline: none !important;"
       >
-        <!-- <span class="menu-text">MENU</span> -->
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
@@ -10364,7 +10384,7 @@
                             data-slide-id="et_pb_slide_0"
                           >
                             <div class="et_pb_slide_overlay_container"></div>
-                            <div class="et_pb_container clearfix">
+                            <div class="et_pb_container clearfix " >
                               <div class="et_pb_slider_container_inner">
                                 <div class="et_pb_slide_description">
                                   <div class="et_pb_slide_content">
@@ -10374,13 +10394,14 @@
                                         ><span class="line"></span>DECOR
                                       </p>
                                     </div>
-                                    <p>
-                                      Luxury residential retreats that celebrate
-                                      modern architecture and embody the future
-                                      of elevated living.
+                                    <p class="backdrop-blur-sm py-5 shadow-2xl bg-[#62626263] " style="padding-bottom: 1.5rem !important;">
+                                      Where Imagination Meets Interiors – Your Space, Our Artistry.
+                                       <br>
+                                       Residential | Commercial | Retail | Hospitality | Educational Institutions <br>
+                                       Where Every Design Tells a Unique Story
                                     </p>
-                                    <p>&nbsp;</p>
-                                    <p style="padding-right: 4px;">
+                                    <p >&nbsp;</p>
+                                    <p style="padding-right: 4px; animation: bounce 1s infinite;" class="flex item-center justify-center m-auto">
                                       <a href="#endecor"
                                         ><img
                                           decoding="async"
