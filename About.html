@@ -11,6 +11,26 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <style id="et-divi-open-sans-inline-css">
+      .slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #cd5225 !important;
+    color: #fff;
+}
+.slide img{
+  aspect-ratio: 16/9 !important;
+}
      
       /* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap */
       /* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */
@@ -3133,6 +3153,12 @@
       }
     </style>
     <style id="divi-dynamic-critical-inline-css" type="text/css">
+      @media (min-width:520px) and (max-width:981px)  {
+        #md-ratio{
+          aspect-ratio: 16/9 !important;
+        }
+        
+      }
       @font-face {
         font-family: ETmodules;
         font-display: block;
@@ -11447,32 +11473,26 @@
                             class="et_pb_module et_pb_image et_pb_image_0 et_pb_image_sticky"
                           >
                             <span class="et_pb_image_wrap">
-                              <img
+                              <img id="md-ratio"
                                 decoding="async"
                                 fetchpriority="high"
                                 width="716"
                                 height="903"
                                 alt="En-decor"
                                 title=""
-                                data-srcset="./assets/New/IMG-20230925-WA0061.png 716w,
-                                 ./assets/New/IMG-20230925-WA0061.png 480w"
-                                data-src="./assets/New/IMG-20230925-WA0061.png"
-                                data-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 716px, 100vw"
-                                class="wp-image-297 lazyload mt-[-5rem]"
-                                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript>
-                                <img
+                              
+                                class="wp-image-297 lazyload "
+                                src="./assets/IMG-20230925-WA0005.jpg" />
+                                <noscript>
+                                <img id="md-ratio"
                                   decoding="async"
                                   fetchpriority="high"
                                   width="716"
                                   height="903"
-                                  src="./assets/New/IMG-20230925-WA0061.png"
+                                  src="./assets/IMG-20230925-WA0005.jpg"
                                   alt="En-decor"
                                   title=""
-                                  srcset="
-                                    ./assets/New/IMG-20230925-WA0061.png 716w,
-                                    ./assets/New/IMG-20230925-WA0061.png 480w
-                                  "
-                                  sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 716px, 100vw"
+                                 
                                   class="wp-image-297" /></noscript
                             ></span>
                           </div>
@@ -11590,105 +11610,53 @@
                             class="et_pb_module wdc_image_carousel wdc_image_carousel_0"
                           >
                             <div class="et_pb_module_inner">
-                              <div
-                                class="wdc-carousel-parent">
-                                <div
-                                  class="wdc-carousel wdc-image-carousel-0 wdc-image-carousel wdc-carousel-frontend wdc-lightbox-off"
-                                >
-                                  <div
-                                    class="wdc_image_carousel_child wdc_image_carousel_child_0 wdc_et_pb_module"
-                                  >
-                                    <div class="et_pb_module_inner">
-                                      <div
-                                        class="wdc-carousel-item wdc-image-carousel-item wdc-swapped-img-selector wdc-hover--none object-cover"
-                                      >
-                                        <figure class="wdc-lightbox-ctrl">
-                                          <div class="wdc-overlay">
-                                            <span
-                                              class="wdc-overlay-icon"
-                                            ></span>
-                                          </div>
-                                          <img
-                                            class="wdc-swapped-img"
-                                            src="./assets/IMG-20230925-WA0063.jpg"
-                                            data-lazy="./assets/slider-images/IMG-20230925-WA0042.png"
-                                            alt="En-decor"
-                                          />
-                                        </figure>
+                                <div class="slider-container">
+                                  <div class="slider">
+                                      <div class="slide">
+                                        <img src="./assets/same-size-image/IMG-20231001-WA0063.png" alt="slider-image">
                                       </div>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="wdc_image_carousel_child wdc_image_carousel_child_1 wdc_et_pb_module"
-                                  >
-                                    <div class="et_pb_module_inner">
-                                      <div
-                                        class="wdc-carousel-item wdc-image-carousel-item wdc-swapped-img-selector wdc-hover--none object-cover"
-                                      >
-                                        <figure class="wdc-lightbox-ctrl">
-                                          <div class="wdc-overlay">
-                                            <span
-                                              class="wdc-overlay-icon"
-                                            ></span>
-                                          </div>
-                                          <img
-                                            class="wdc-swapped-img object-cover"
-                                            src="./assets/slider-images/IMG-20231001-WA0070.png"
-                                            data-lazy="./assets/slider-images/IMG-20231001-WA0070.png"
-                                            alt="En-decor"
-                                          />
-                                        </figure>
+                                      <div class="slide">
+                                        <img src="./assets/same-size-image/IMG-20231001-WA0025.png" alt="slider-image">
+
                                       </div>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="wdc_image_carousel_child wdc_image_carousel_child_2 wdc_et_pb_module"
-                                  >
-                                    <div class="et_pb_module_inner">
-                                      <div
-                                        class="wdc-carousel-item wdc-image-carousel-item wdc-swapped-img-selector wdc-hover--none object-cover"
-                                      >
-                                        <figure class="wdc-lightbox-ctrl">
-                                          <div class="wdc-overlay">
-                                            <span
-                                              class="wdc-overlay-icon"
-                                            ></span>
-                                          </div>
-                                          <img
-                                            class="wdc-swapped-img object-cover"
-                                            src="./assets/slider-images/IMG-20231001-WA0030.png"
-                                            data-lazy="./assets/slider-images/IMG-20231001-WA0030.png"
-                                            alt=""
-                                          />
-                                        </figure>
+                                      <div class="slide">
+                                        <img src="./assets/same-size-image/IMG-20230925-WA0005.png" alt="slider-image">
+
                                       </div>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="wdc_image_carousel_child wdc_image_carousel_child_3 wdc_et_pb_module"
-                                  >
-                                    <div class="et_pb_module_inner">
-                                      <div
-                                        class="wdc-carousel-item wdc-image-carousel-item wdc-swapped-img-selector wdc-hover--none object-cover"
-                                      >
-                                        <figure class="wdc-lightbox-ctrl">
-                                          <div class="wdc-overlay">
-                                            <span
-                                              class="wdc-overlay-icon"
-                                            ></span>
-                                          </div>
-                                          <img
-                                            class="wdc-swapped-img object-cover"
-                                            src="./assets/slider-images/IMG-20230925-WA0042.png"
-                                            data-lazy="./assets/slider-images/IMG-20230925-WA0042.png"
-                                            alt=""
-                                          />
-                                        </figure>
+                                      <div class="slide">
+                                        <img src="./assets/same-size-image/IMG-20230925-WA0006.png" alt="slider-image">
+
                                       </div>
-                                    </div>
+                                      <div class="slide">
+                                        <img src="./assets/same-size-image/IMG-20230925-WA0007.png" alt="slider-image">
+
+                                      </div>
+                                      <div class="slide">
+                                        <img src="./assets/same-size-image/IMG-20230925-WA0009.png" alt="slider-image">
+
+                                      </div>
+                                      <div class="slide">
+                                        <img src="./assets/same-size-image/IMG-20230925-WA0010.png" alt="slider-image">
+
+                                      </div>
+                                      <div class="slide">
+                                        <img src="./assets/same-size-image/IMG-20230925-WA0028.png" alt="slider-image">
+
+                                      </div>
+                                      <div class="slide">
+                                        <img src="./assets/same-size-image/IMG-20230925-WA0054.png" alt="slider-image">
+
+                                      </div>
+                                      <div class="slide">
+                                        <img src="./assets/same-size-image/IMG-20231001-WA0027.png" alt="slider-image">
+
+                                      </div>
+                                      <div class="slide">
+                                        <img src="./assets/same-size-image/IMG-20231001-WA0037.png" alt="slider-image">
+
+                                      </div>
                                   </div>
-                                </div>
-                              </div>
+                              </div>                              
                             </div>
                           </div>
                         </div>
@@ -11766,6 +11734,7 @@
                               <p>Residential</p>
                               <p>Commerical</p>
                               <p>Retail</p>
+                              <p>hospitality</p>
                               <p>Educational Institutions</p>
                             </div>
                           </div>
@@ -11783,9 +11752,9 @@
                             class="et_pb_module et_pb_image et_pb_image_2 et_pb_image_sticky"
                           >
                             <span class="et_pb_image_wrap">
-                              <img
+                              <img id="md-ratio"
                                 decoding="async"
-                                src="./assets/New/IMG-20230925-WA0061.png"
+                                src="./assets/IMG-20230925-WA0005.jpg"
                                 class="wp-image-297"
                               />
                             </span>
@@ -11798,25 +11767,21 @@
                         >
                           <div class="et_pb_module et_pb_image et_pb_image_3">
                             <span class="et_pb_image_wrap">
-                              <img
+                              <img id="md-ratio"
                                 decoding="async"
-                                width="428"
-                                height="648"
+                               
                                 alt=""
                                 title="WE ARE BMA A-mobile"
-                                src="./assets/same-size-image/IMG-20230925-WA0003.png" /><noscript>
-                                <img
+                                src="./assets/same-size-image/IMG-20230925-WA0003.png" />
+                                <noscript>
+                                <img id="md-ratio"
                                   decoding="async"
                                   width="428"
                                   height="648"
                                   src="./assets/same-size-image/IMG-20230925-WA0003.png"
                                   alt=""
                                   title="WE ARE BMA A-mobile"
-                                  srcset="
-                                    ./assets/same-size-image/IMG-20230925-WA0003.png 428w,
-                                    ./assets/same-size-image/IMG-20230925-WA0003.png 198w
-                                  "
-                                  sizes="(max-width: 428px) 100vw, 428px"
+                                 
                                   class="wp-image-2437"
                                 /> </noscript
                             ></span>
@@ -13319,5 +13284,35 @@
     ></script>
 
     <span class="et_pb_scroll_top et-pb-icon"></span>
+    <script>
+      const slider = document.querySelector(".slider");
+const slides = document.querySelectorAll(".slide");
+const slideWidth = slides[0].clientWidth;
+let currentIndex = 0;
+
+function goToSlide(index) {
+    if (index < 0) {
+        index = slides.length - 1;
+    } else if (index >= slides.length) {
+        index = 0;
+    }
+
+    slider.style.transform = `translateX(-${index * slideWidth}px)`;
+    currentIndex = index;
+}
+
+function nextSlide() {
+    goToSlide(currentIndex + 1);
+}
+
+function autoSlide() {
+    setInterval(nextSlide, 3000); // Change slide every 3 seconds
+}
+
+autoSlide(); // Start auto sliding
+
+// Optionally, you can add navigation buttons to manually control the slider
+
+    </script>
   </body>
 </html>

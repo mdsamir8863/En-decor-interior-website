@@ -4,6 +4,7 @@
 
 #dm-logo,
 .logo-scroll {
+    max-height: 121px !important;
     width: 399px !important
 }
 
