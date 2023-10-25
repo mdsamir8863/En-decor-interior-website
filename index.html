@@ -8,7 +8,11 @@
   <script type="text/javascript">
     document.documentElement.className = "js";
   </script>
-
+  <!-- music -->
+ <link
+ rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <style id="et-divi-open-sans-inline-css">
     #ratio{
@@ -10210,6 +10214,16 @@
       </div>
     </header>
   </div>
+
+  <div class="music-player absolute top-[36rem] z-[999] h-full left-2 md:top-[30rem]">
+    <audio id="myAudio" controls style=" display: none;" >
+      <source src="./music/endecore-music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <button id="playButton" style="background-color: transparent !important; border: none !important; cursor: pointer; outline: none !important; ">
+      <img id="soundIcon" src="./assets/icons/play.png" alt="Sound" style="width: 5rem !important;" />
+    </button>
+  </div>
   <div id="page-container">
     <div id="et-boc" class="et-boc">
       <header class="et-l et-l--header">
@@ -10268,10 +10282,10 @@
                               </div>
                             </div>
                           </div>
-                          <span class="et_pb_section_video_bg">
+                          <span class="et_pb_section_video_bg"">
                             <video loop="loop" autoplay playsinline muted>
                               <source type="video/mp4"
-                                src="./videos/Homepage.mp4" />
+                                src="./videos/endecore-video.mov" />
                             </video>
                           </span>
                         </div>
@@ -11283,6 +11297,27 @@ BANGALORE-560045 -->
     id="et-builder-modules-script-sticky-js"></script>
 
   <span class="et_pb_scroll_top et-pb-icon"></span>
+  <script>
+    const audio = document.getElementById("myAudio");
+    const playButton = document.getElementById("playButton");
+    const soundIcon = document.getElementById("soundIcon");
+
+    audio.addEventListener("play", function () {
+      soundIcon.src = "./assets/icons/pause.png";
+    });
+
+    audio.addEventListener("pause", function () {
+      soundIcon.src = "./assets/icons/play.png";
+    });
+
+    playButton.addEventListener("click", function () {
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    });
+  </script>
 </body>
 
 </html>
