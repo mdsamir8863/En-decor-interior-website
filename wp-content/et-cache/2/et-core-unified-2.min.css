@@ -370,12 +370,12 @@ p {
     top: 18px
 }
 
+
+
 #dm-header {
-    /* background-color: rgba(0, 0, 0, 0.0) */
-    background-color: rgba(255, 255, 255, 0.565) !important;
-
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important
 }
-
 #dm-header.fixed-header {
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important
@@ -438,7 +438,7 @@ body .menu-wrap {
     .elevated {
         font-size: 19px !important
     }
-    
+
 }
 
 .elevated {

@@ -324,8 +324,15 @@ div.wdc-carousel.equal-height-on .slick-vertical .slick-track {
     vertical-align: middle !important;
 }
 
-.wdc-carousel figure {
+.wdc-carousel figure  {
     margin: 0;
+}
+.wdc-carousel figure>img  {
+    /* height: 40rem; */
+    width: 100%;
+    /* object-fit: contain !important; */
+    aspect-ratio: 16/9 !important;
+    
 }
 
 .wdc-carousel .slick-arrow:before,
