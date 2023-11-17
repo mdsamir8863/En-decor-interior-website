@@ -5266,6 +5266,11 @@
     .et_pb_accordion .et_pb_toggle_open .et_pb_toggle_title:before {
       display: none;
     }
+    .et_pb_toggle_close:hover{
+      background-color: rgba(242, 242, 242, 0.634);
+    }
+
+
 
     @media (max-width: 980px) {
 
@@ -9441,6 +9446,7 @@
       font-size: 24px;
       right: -4px;
       color: #cd5225;
+      /* display: none !important; */
     }
 
     .et_pb_module.et_pb_toggle_3.et_pb_toggle,
@@ -9787,6 +9793,26 @@
 <body data-rsssl="1"
   class="home page-template-default page page-id-2 et-tb-has-template et-tb-has-header et-tb-has-footer et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_smooth_scroll et_no_sidebar et_divi_theme et-db">
   <div class="divi-mobile-menu">
+    
+<!-- absolute buttons -->
+<div class="w-full absolute-btn fixed z-[999] top-[35rem] md:top-[30rem] flex item-center justify-between">
+  
+  <div class="music-player  top-[36rem] z-[999] h-full left-2 cursor-pointer  ">
+    <audio id="myAudio" controls style=" display: none;" >
+      <source src="./music/endecore-music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <button id="playButton" style="background-color: transparent !important; border: none !important; cursor: pointer; outline: none !important; ">
+      <img id="soundIcon" src="./assets/icons/play.png" alt="Sound" style="width: 5rem !important;" />
+    </button>
+  </div>
+  <div class=" top-[36rem] z-[999] h-full right-2   cursor-pointer ">
+    <a href="https://wa.me/+918056315820">
+      <img class="w-[5rem]" src="./assets/icons/WhatsApp_icon.png" alt="">
+    </a>
+  </div>
+</div>
+
     <div id="dm_nav" class="menu-wrap menuclosed">
       <div class="menu-wrap__inner">
         <div class="scroll_section">
@@ -10215,15 +10241,8 @@
     </header>
   </div>
 
-  <div class="music-player fixed top-[36rem] z-[999] h-full left-2  md:top-[30rem]">
-    <audio id="myAudio" controls style=" display: none;" >
-      <source src="./music/endecore-music.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
-    <button id="playButton" style="background-color: transparent !important; border: none !important; cursor: pointer; outline: none !important; ">
-      <img id="soundIcon" src="./assets/icons/play.png" alt="Sound" style="width: 5rem !important;" />
-    </button>
-  </div>
+ 
+
   <div id="page-container">
     <div id="et-boc" class="et-boc">
       <header class="et-l et-l--header">
@@ -10285,7 +10304,7 @@
                           <span class="et_pb_section_video_bg">
                             <video loop="loop" autoplay playsinline muted style="aspect-ratio: 16/9 !important; object-fit: contain Im !important;">
                               <source type="video/mp4"
-                                src="./videos/En-Decor.mp4" />
+                                src="./videos/home.mp4" />
                             </video>
                           </span>
                         </div>
@@ -10304,7 +10323,27 @@
                             <h1>WE ARE En-Decor</h1>
                           </div>
                         </div>
-                        <div class="et_pb_module et_pb_toggle et_pb_toggle_0 et_pb_toggle_item et_pb_toggle_close">
+                        <a href="./projects.html">
+                          <div class="et_pb_module et_pb_toggle et_pb_toggle_0 et_pb_toggle_item et_pb_toggle_close">
+                            <h5 class="et_pb_toggle_title">DISCOVER OUR PROJECTS</h5>
+                          </div>
+                        </a>
+                        <a href="./About.html">
+                          <div class="et_pb_module et_pb_toggle et_pb_toggle_0 et_pb_toggle_item et_pb_toggle_close">
+                            <h5 class="et_pb_toggle_title">ABOUT En-Decor</h5>
+                          </div>
+                        </a>
+                        <a href="./services.html">
+                          <div class="et_pb_module et_pb_toggle et_pb_toggle_0 et_pb_toggle_item et_pb_toggle_close">
+                            <h5 class="et_pb_toggle_title">OUR SERVICES</h5>
+                          </div>
+                        </a>
+                        <a href="./contact.html">
+                          <div class="et_pb_module et_pb_toggle et_pb_toggle_0 et_pb_toggle_item et_pb_toggle_close">
+                            <h5 class="et_pb_toggle_title">Share Your Vision With Us</h5>
+                          </div>
+                        </a>
+                        <!-- <div class="et_pb_module et_pb_toggle et_pb_toggle_0 et_pb_toggle_item et_pb_toggle_close">
                           <h5 class="et_pb_toggle_title">OUR PROJECTS</h5>
                           <div class="et_pb_toggle_content clearfix">
                             <p>
@@ -10319,26 +10358,26 @@
                                   style="font-size: 10px; line-height: 0;">&#x35;</span></a>
                             </p>
                           </div>
-                        </div>
-                        <div class="et_pb_module et_pb_toggle et_pb_toggle_1 et_pb_toggle_item et_pb_toggle_close">
+                        </div> -->
+                        <!-- <div class="et_pb_module et_pb_toggle et_pb_toggle_1 et_pb_toggle_item et_pb_toggle_close">
                           <h5 class="et_pb_toggle_title">
                             ABOUT En-Decor
                           </h5>
                           <div class="et_pb_toggle_content clearfix">
-                            <p>
+                           <p>
                               Internationally recognized as a leader in modern
                               architecture, En-Decor designs custom retreats
                               that celebrate modernism and embodies the future
                               of elevated living.
-                            </p>
-                            <p>&nbsp;</p>
+                            </p> 
+                             <p>&nbsp;</p>
                             <p>
                               <a href="./About.html">Discover EN-DECOR<span class="et-pb-icon"
                                   style="font-size: 10px; line-height: 0;">5</span></a>
-                            </p>
+                            </p> 
                           </div>
-                        </div>
-                        <div class="et_pb_module et_pb_toggle et_pb_toggle_2 et_pb_toggle_item et_pb_toggle_close">
+                        </div> -->
+                        <!-- <div class="et_pb_module et_pb_toggle et_pb_toggle_2 et_pb_toggle_item et_pb_toggle_close">
                           <h5 class="et_pb_toggle_title">OUR SERVICES</h5>
                           <div class="et_pb_toggle_content clearfix">
                             <p>
@@ -10350,14 +10389,14 @@
                             </p>
                             <p>&nbsp;</p>
                             <p>
-                              <!-- https://blazema.wpengine.com/process/ -->
+                              
 
                               <a href="./services.html">DISCOVER OUR SERVICES
                                 <span class="et-pb-icon" style="font-size: 10px; line-height: 0;">&#x35;</span></a>
                             </p>
                           </div>
-                        </div>
-                        <div class="et_pb_module et_pb_toggle et_pb_toggle_3 et_pb_toggle_item et_pb_toggle_close">
+                        </div> -->
+                        <!-- <div class="et_pb_module et_pb_toggle et_pb_toggle_3 et_pb_toggle_item et_pb_toggle_close">
                           <h5 class="et_pb_toggle_title">
                             Share Your Vision With Us
                           </h5>
@@ -10371,7 +10410,7 @@
                                 <span class="et-pb-icon" style="font-size: 10px; line-height: 0;">&#x35;</span></a>
                             </p>
                           </div>
-                        </div>
+                        </div> -->
                       </div>
                       <div
                         class="et_pb_column et_pb_column_1_2 et_pb_column_5 et_pb_css_mix_blend_mode_passthrough et-last-child">
@@ -10447,7 +10486,14 @@ BANGALORE-560045 -->
                         </div>
 
                         <div class="et_pb_module et_pb_text et_pb_text_3 et_pb_text_align_left et_pb_bg_layout_light uppercase mt-6">
-                          At En-decor, we are passionate about transforming spaces into extraordinary environments. With a dedication to excellence in interior design, we specialize in crafting stunning concepts for residential, commercial, retail, hospitality, and educational institutions.
+                          En-Décor Interiors is the one stop solution for all the interior design needs.
+                          We are dreamers, visualizers, interior designers, planners, executors and decorators, whose focus is to bring your space to life.
+<br>
+<br>
+Our eye for meticulous details helps us to understand client needs, formulate seamless design strategies and fashion flawless spaces for those who matter the most to us. 
+That's You...
+
+                          <!-- At En-decor, we are passionate about transforming spaces into extraordinary environments. With a dedication to excellence in interior design, we specialize in crafting stunning concepts for residential, commercial, retail, hospitality, and educational institutions. -->
                         </div>
                       </div>
                     </div>
