@@ -854,10 +854,10 @@ body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc 
 }
 
 .wdc_image_carousel_1 .wdc-carousel .slick-arrow {
-    height: 40px;
-    width: 40px;
+    height: 55px;
+    width: 55px;
     color: RGBA(0, 0, 0, 0);
-    background: rgba(255, 255, 255, 0.7);
+    background: #cbd5e0;
     border: 0px solid #333;
     transform: skew(0deg);
     margin-top: -20px
