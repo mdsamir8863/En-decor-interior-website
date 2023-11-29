@@ -10310,15 +10310,27 @@
                             </div>
                           </div>
                           <span class="et_pb_section_video_bg">
-                            <video loop="loop" autoplay playsinline muted style="aspect-ratio: 16/9 !important; object-fit: contain Im !important;">
+                            <video id="mb-d-none" loop="loop" autoplay playsinline muted style="aspect-ratio: 16/9 !important; object-fit: contain Im !important;">
                               <source type="video/mp4"
                                 src="./videos/home.mp4" />
+                            </video>
+                            <video class="md:hidden" loop="loop" autoplay playsinline muted style="aspect-ratio: 16/9 !important; object-fit: contain Im !important;">
+                              <source type="video/mp4"
+                                src="./videos/mb-video.mp4" />
                             </video>
                           </span>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <style>
+                    @media screen and (max-width:764px){
+                      
+                      #mb-d-none{
+                        display: none !important;
+                      }
+                    }
+                  </style>
                   <div class="contact"></div>
                   <div id="endecor" class="et_pb_section et_pb_section_9 et_section_regular">
                     <div class="et_pb_row et_pb_row_4 et_pb_equal_columns et_pb_gutters1">
