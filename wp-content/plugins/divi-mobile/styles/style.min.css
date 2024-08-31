@@ -1,0 +1,65 @@
+body .divi-mobile-menu.bottom-navigation-menu {
+    z-index: 999999
+}
+
+.scroll_section {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
+}
+
+.menu-wrap__inner .scroll_section .dm-search {
+    position: relative;
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 10px
+}
+
+.menu-wrap__inner #et_top_search_mob {
+    width: 100%
+}
+
+#et_top_search_mob {
+    position: relative
+}
+
+.et_header_style_left #et_top_search_mob .et-search-form {
+    width: 100% !important;
+    max-width: 100% !important
+}
+
+#et_top_search_mob .et-search-form input {
+    bottom: auto;
+    padding-left: 30px
+}
+
+.dm-search form.et-search-form {
+    width: 100%;
+    margin: 0;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    position: relative
+}
+
+.dm-search .et-search-form input {
+    width: 100%;
+    height: 100%;
+    background: 0 0;
+    padding: 0 0 0 10px;
+    line-height: 1.5;
+    position: relative;
+    top: 0;
+    text-overflow: ellipsis;
+    right: auto;
+    left: 0
+}
+
+.anchorpoint {
+    touch-action: none
+}
+
+.sub-menu .et-waypoint:not(.et_pb_counters) {
+    opacity: 1
+}

@@ -1,0 +1,399 @@
+@charset "UTF-8";
+/*!
+ *  Icon Party CSS
+ *
+ *  Contains code based on and/or copied from:
+ *
+ *  Font Awesome by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ *
+ *  Font Awesome Free by @fontawesome - https://fontawesome.com
+ *  License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+
+Copyright 2018 Dave Gandy and FontAwesome
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+This file was modified by Anna Kurowska, Paweł Tarasiuk, and - or others; last modified 2021-03-11
+
+*/
+
+@-moz-keyframes icon-appear {
+    0% {
+        -webkit-opacity: 0;
+        opacity: 0
+    }
+    to {
+        -webkit-opacity: 1;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes icon-appear {
+    0% {
+        -webkit-opacity: 0;
+        opacity: 0
+    }
+    to {
+        -webkit-opacity: 1;
+        opacity: 1
+    }
+}
+
+@-ms-keyframes icon-appear {
+    0% {
+        -webkit-opacity: 0;
+        opacity: 0
+    }
+    to {
+        -webkit-opacity: 1;
+        opacity: 1
+    }
+}
+
+@-o-keyframes icon-appear {
+    0% {
+        -webkit-opacity: 0;
+        opacity: 0
+    }
+    to {
+        -webkit-opacity: 1;
+        opacity: 1
+    }
+}
+
+@keyframes icon-appear {
+    0% {
+        -webkit-opacity: 0;
+        opacity: 0
+    }
+    to {
+        -webkit-opacity: 1;
+        opacity: 1
+    }
+}
+
+#page-container .et-social-icons.ds-icon-party {
+    margin-right: 0
+}
+
+#page-container .et-social-myspace a {
+    transform: translateY(2px)
+}
+
+#page-container .et-social-myspace a:before {
+    font-family: ETmodules !important
+}
+
+#page-container .et-social-500px a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-amazon a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-audible a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-bandcamp a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-behance a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-bitbucket a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-codepen a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-click-to-call a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-deviantart a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-discord a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-dribbble a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-ebay a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-etsy a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-facebook a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-flickr a.ds-iparty-icon:before,
+#page-container .et-social-flikr a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-foursquare a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-github a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-gitlab a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-google a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-google-plus a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-houzz a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-imdb a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-instagram a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-itunes a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-kickstarter a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-linkedin a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-medium a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-meetup a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-mixcloud a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-patreon a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-periscope a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-pinterest a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-producthunt a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-podcast a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-phone a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-rss a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-reddit a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-skype a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-slack a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-snapchat a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-soundcloud a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-spotify a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-stackoverflow a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-stumbleupon a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-tripadvisor a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-tumblr a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-telegram a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-tiktok a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-twitch a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-twitter a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-untappd a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-vimeo a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-whatsapp a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-wordpress a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-yelp a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-youtube a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-xing a.ds-iparty-icon:before {
+    content: "" !important
+}
+
+#page-container .et-social-click-to-email a.ds-iparty-icon:before,
+#page-container .et-social-email a.ds-iparty-icon:before,
+.et-social-click-to-email a.icon:before,
+.et-social-email a.icon:before {
+    content: ""
+}
+
+#page-container .et_pb_social_icon a.icon.ds-iparty-icon.brands:before,
+#page-container a.ds-iparty-icon:before,
+.et-db #et-boc .et-l .et_pb_social_icon a.icon.ds-iparty-icon.brands:before {
+    font-family: "Font Awesome 5 Brands" !important
+}
+
+#page-container .et_pb_social_icon a.icon.ds-iparty-icon.free,
+#page-container a.ds-iparty-icon.free:before,
+.et-db #et-boc .et-l .et_pb_social_icon a.icon.ds-iparty-icon.free:before {
+    font-family: "Font Awesome\ 5 Free" !important;
+    font-style: normal !important;
+    font-weight: 900 !important
+}
+
+.et-social-icons:not(.ds-icon-party) {
+    display: none !important
+}
+
+.ds_icon_party_tooltip .et-social-icon:hover span {
+    display: block;
+    z-index: 999999
+}
+
+.ds_icon_party_tooltip .et-social-icon span {
+    text-align: center;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    bottom: -28px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 100;
+    border-radius: 4px;
+    animation: icon-appear 1s;
+    animation-fill-mode: forwards
+}
+
+.ds_icon_party_tooltip .et-social-icon:hover a {
+    opacity: 1
+}
+
+#footer-bottom .ds_icon_party_tooltip {
+    margin-bottom: 26px
+}
+
+#main-header .et-social-icon a {
+    font-size: 16px
+}
+
+.et_mobile_menu .et-social-icon {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    width: 60px;
+    float: left;
+    line-height: 0
+}
+
+.et_mobile_menu .et-social-icon a {
+    border-bottom: 0
+}
+
+.et_mobile_menu .et-social-icon a:hover {
+    color: inherit
+}
+
+.et_pb_social_media_follow div {
+    display: inline-block
+}
+
+.et_pb_social_media_follow li a {
+    margin-right: 8px !important
+}
