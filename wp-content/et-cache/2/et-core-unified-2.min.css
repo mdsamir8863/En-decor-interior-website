@@ -461,7 +461,7 @@ body .menu-wrap {
     display: inline-block;
     vertical-align: text-top;
     margin-right: 9.7px;
-    margin-top: 9px !important;
+    margin-top: 9px;
     border-radius: 0
 }
 
