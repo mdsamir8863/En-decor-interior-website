@@ -9919,7 +9919,8 @@
         </div>
       </div>
     </div>
-    <button id="open-button" class="hamburger menu-button hamburger--spin border outline-none" type="button"
+    <div class="mdHidden">
+      <button id="open-button" class="hamburger menu-button hamburger--spin border outline-none" type="button"
       style="outline: none !important;">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
@@ -9929,6 +9930,32 @@
         </span>
       </span>
     </button>
+    </div>
+    <!-- desktop navbar -->
+   <ul class="fixed flex item-center gap-10 desktoNav right-16 z-999999" style="z-index: 99999999999;">
+    <li> <a class="text-[#cd5225] font-bold text-lg uppercase" href="./index.html">Home</a></li>
+    <li> <a class="text-lg uppercase" href="./About.html">About</a></li>
+    <li> <a class="text-lg uppercase" href="./services.html">Services</a></li>
+    <li> <a class="text-lg uppercase" href="./projects.html">Projects</a></li>
+    <li> <a class="text-lg uppercase" href="./contact.html">Contact</a></li>
+   </ul>
+    <style>
+      @media (max-width:941px) {
+        .desktoNav{
+          top: 2rem !important;
+          display: none;
+        }
+      }
+      @media (min-width:941px) {
+        .desktoNav{
+          top: 2.5rem !important;
+          display: flex;
+        }
+        .mdHidden{
+          display: none;
+        }
+      }
+    </style>
     <script>
       // Select the button element
 const openButton = document.getElementById('open-button');
