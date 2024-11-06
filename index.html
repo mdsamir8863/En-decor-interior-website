@@ -312,6 +312,12 @@
     }
   </style> -->
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <script type="text/javascript">
     let jqueryParams = [],
       jQuery = function (r) {
@@ -9905,6 +9911,9 @@
               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30">
                 <a href="./services.html">Services</a>
               </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30">
+                <a href="./blogs.html">Blogs</a>
+              </li>
               
               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28">
                 <a href="./projects.html">Projects</a>
@@ -9936,6 +9945,7 @@
     <li> <a class="text-[#cd5225] font-bold text-lg uppercase" href="./index.html">Home</a></li>
     <li> <a class="text-lg uppercase" href="./About.html">About</a></li>
     <li> <a class="text-lg uppercase" href="./services.html">Services</a></li>
+    <li> <a class="text-lg uppercase" href="./blogs.html">Blogs</a></li>
     <li> <a class="text-lg uppercase" href="./projects.html">Projects</a></li>
     <li> <a class="text-lg uppercase" href="./contact.html">Contact</a></li>
    </ul>
@@ -10516,6 +10526,8 @@ window.addEventListener('scroll', function() {
                               class="wp-image-5645" /></span>
                         </div>
                       </div>
+
+                    
                       <div
                         class="et_pb_column et_pb_column_1_2 et_pb_column_7 et_pb_css_mix_blend_mode_passthrough et-last-child">
                         <div class="et_pb_module et_pb_divider et_pb_divider_1 et_pb_divider_position_ et_pb_space">
@@ -10612,6 +10624,163 @@ keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
 keenSliderNext.addEventListener('click', () => keenSlider.next())
 </script>
 
+
+   <!-- We Are Different Section -->
+   <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2
+        class="text-3xl font-bold text-center text-orange-600 mb-8"
+      >
+        We Are Different
+      </h2>
+      <p
+        class="text-center max-w-2xl mx-auto mb-12 text-gray-700"
+      >
+        Our approach to interior design is driven by
+        collaboration, creativity, and commitment to
+        excellence, creating spaces that feel authentically
+        you.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="flex flex-col items-center">
+          <i
+            class="fas fa-pencil-alt text-5xl text-orange-600 mb-4"
+          ></i>
+          <h3 class="text-xl font-semibold mb-2">
+            Tailored Design & Customization
+          </h3>
+          <p>
+            Each project is unique and tailored to your
+            lifestyle, with no templates or shortcuts—every
+            design reflects the owner's personality and taste.
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i
+            class="fas fa-cubes text-5xl text-orange-600 mb-4"
+          ></i>
+          <h3 class="text-xl font-semibold mb-2">
+            Quality Materials Only
+          </h3>
+          <p>
+            We select only the best materials to ensure high
+            durability and unmatched quality, delivering
+            designs that last.
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i
+            class="fas fa-users text-5xl text-orange-600 mb-4"
+          ></i>
+          <h3 class="text-xl font-semibold mb-2">
+            In-House Team
+          </h3>
+          <p>
+            Our experienced team of carpenters, electricians,
+            and artisans work exclusively on our projects,
+            ensuring quality control and attention to detail.
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i
+            class="fas fa-home text-5xl text-orange-600 mb-4"
+          ></i>
+          <h3 class="text-xl font-semibold mb-2">
+            Residential Focus
+          </h3>
+          <p>
+            We specialize in homes only, avoiding commercial
+            projects to provide dedicated attention to
+            residential spaces.
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i
+            class="fas fa-hammer text-5xl text-orange-600 mb-4"
+          ></i>
+          <h3 class="text-xl font-semibold mb-2">
+            Personal Supervision
+          </h3>
+          <p>
+            Each project is personally supervised to ensure
+            that every detail is crafted to perfection, from
+            concept to completion.
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i
+            class="fas fa-phone text-5xl text-orange-600 mb-4"
+          ></i>
+          <h3 class="text-xl font-semibold mb-2">
+            Lifetime Engagement
+          </h3>
+          <p>
+            Our relationship doesn’t end after project
+            handover; we offer lifetime support to ensure your
+            space continues to look and feel amazing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Happy Clients Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-orange-600 mb-8">Our Happy Clients</h2>
+        <p class="text-center max-w-2xl mx-auto mb-12 text-gray-700">
+            We take pride in the relationships we've built with our clients. Here are some of the brands we've had the pleasure to work with.
+        </p>
+
+        <!-- Swiper Slider -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide flex justify-center">
+                    <img src="https://via.placeholder.com/150" alt="Client Logo 1" class="h-20 w-auto">
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide flex justify-center">
+                    <img src="https://via.placeholder.com/150" alt="Client Logo 2" class="h-20 w-auto">
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide flex justify-center">
+                    <img src="https://via.placeholder.com/150" alt="Client Logo 3" class="h-20 w-auto">
+                </div>
+                <!-- Slide 4 -->
+                <div class="swiper-slide flex justify-center">
+                    <img src="https://via.placeholder.com/150" alt="Client Logo 4" class="h-20 w-auto">
+                </div>
+                <!-- Slide 5 -->
+                <div class="swiper-slide flex justify-center">
+                    <img src="https://via.placeholder.com/150" alt="Client Logo 5" class="h-20 w-auto">
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Swiper Initialization Script -->
+<script>
+    const swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            640: { slidesPerView: 2, spaceBetween: 20 },
+            768: { slidesPerView: 3, spaceBetween: 30 },
+            1024: { slidesPerView: 4, spaceBetween: 40 },
+        },
+    });
+</script>
 <section class="bg-gray-50">
 <div
   class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24"
@@ -11170,6 +11339,7 @@ keenSliderNext.addEventListener('click', () => keenSlider.next())
                         <a style="color: #be5933 !important;" href="About.html">ABOUT</a>
                         <a style="color: #be5933 !important;" href="./services.html">SERVICES</a>
                        
+                        <a style="color: #be5933 !important;" href="./blogs.html">BLOGS</a>
                         <a style="color: #be5933 !important;" href="./projects.html">PROJECTS</a>
                        
                         
@@ -11319,7 +11489,9 @@ keenSliderNext.addEventListener('click', () => keenSlider.next())
                     <div class="et_pb_text_inner">
                       <p>
                         <a href="./About.html">ABOUT</a>
-
+                        <br>
+                        <a href="./blogs.html">BLOGS</a>
+                        <br>
                         <a href="./contact.html">CONTACT</a>
                       </p>
                     </div>
