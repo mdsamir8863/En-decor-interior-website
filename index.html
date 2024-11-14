@@ -9793,9 +9793,9 @@
         padding-left: 25px;
       }
     }
-    ::-webkit-scrollbar{
+    /* ::-webkit-scrollbar{
       display: none !important;
-    }
+    } */
   </style>
   <link rel="stylesheet" id="et-core-unified-2-cached-inline-styles"
     href="./wp-content/et-cache/2/et-core-unified-2.min.css" />
@@ -9852,7 +9852,7 @@
 <!-- Modal popup -->
 <div
   style="z-index: 99999 !important;"
-  class="modal fade mt-5"
+  class="modal fade md:mt-5"
   id="consultationModal"
   tabindex="-1"
   aria-labelledby="modalLabel"
@@ -9862,7 +9862,7 @@
     <div
       class="modal-content text-dark"
       style="
-        background-color: #d6a54e;
+        background-color: #CE9C49;
         border: none;
         border-radius: 15px;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -9889,58 +9889,64 @@
           "
         ></button>
 
+        <!-- Modal Heading -->
         <h2
-          class="mb-3"
+          class="mb-4"
           style="font-size: 24px; font-weight: bold; text-transform: uppercase; color: black;"
         >
           Book A Free <span style="color: #f15a22;">Consultation</span>
         </h2>
-        <p
-          class="mb-4"
-          style="font-size: 16px; line-height: 1.6; color: #333; max-width: 550px; margin: 0 auto;"
-        >
-          We are your refreshing take on a classically designed space. To know
-          more, drop in your email so we can reach out to you and help you
-          better, all for free. We also give you detailed quotations based on
-          your space size and design requirements.
-        </p>
-        <!-- Icon and Form -->
+
+        
+        <!-- Input and Button Section -->
         <div
-          class="d-flex flex-row align-items-center"
-          style="gap: 15px; margin-top: 30px;"
+        class="row g-3 align-items-center justify-content-center"
+        style="margin-top: 20px;"
         >
-          <input
-            type="email"
-            placeholder="Your email"
-            class="form-control"
-            style="
-              padding: 10px 15px;
-              border-radius: 25px;
-              max-width: 300px;
-              border: 2px solid #f15a22;
-              outline: none;
-              text-align: center;
-            "
-          />
-          <button
-            type="button"
-            class="btn"
-            style="
-              background-color: #f15a22;
-              color: white;
-              font-weight: bold;
-              padding: 8px 30px;
-              border-radius: 25px;
-              border: none;
-            "
-          >
-            Submit
-          </button>
+        <!-- Sofa Image -->
+        <img
+          src="./assets/sofaPopup.png"
+          alt="Sofa Image"
+          class="h-[11rem]  md:h-[15rem] mx-auto rounded-lg object-cover transform group-hover:scale-105 transition duration-300 ease-in-out mb-4"
+        />
+          <!-- Email Input -->
+          <div class="col-12 col-md-6">
+            <input
+              type="email"
+              placeholder="Your email"
+              class="form-control"
+              style="
+                padding: 10px 15px;
+                border-radius: 25px;
+                border: 2px solid #f15a22;
+                text-align: center;
+              "
+            />
+          </div>
+          <!-- Submit Button -->
+          <div class="col-12 col-md-4">
+            <button
+              type="button"
+              class="btn w-100"
+              style="
+                background-color: #f15a22;
+                color: white;
+                font-weight: bold;
+                padding: 10px 20px;
+                border-radius: 25px;
+                border: none;
+              "
+            >
+              Submit
+            </button>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
 </div>
+
 
 
 
