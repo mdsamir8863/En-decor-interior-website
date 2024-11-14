@@ -689,6 +689,7 @@
       margin: 0;
       --wp--style--global--content-size: 823px;
       --wp--style--global--wide-size: 1080px;
+      overflow: auto !important;
     }
 
     .wp-site-blocks>.alignleft {
@@ -9848,69 +9849,101 @@
 </div>
 
 
-  <!-- Modal popup -->
-  <div style="z-index: 99999 !important;" class="modal fade mt-5" id="consultationModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content text-white" style="
-        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDUgVNegHkHyGhcxHnhyld_NRfgLAWplMfYA&s') no-repeat center center / cover;
+<!-- Modal popup -->
+<div
+  style="z-index: 99999 !important;"
+  class="modal fade mt-5"
+  id="consultationModal"
+  tabindex="-1"
+  aria-labelledby="modalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div
+      class="modal-content text-dark"
+      style="
+        background-color: #d6a54e;
         border: none;
         border-radius: 15px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         position: relative;
-        overflow: hidden;">
-        
-        <!-- Overlay for readability -->
-        <div style="position: absolute; inset: 0; background: rgba(0, 0, 0, 0.7); z-index: 1;"></div>
-  
-        <!-- Header -->
-        <div class="modal-header border-0 z-10" style="position: relative;">
-          <!-- <h1 class="modal-title mx-auto" id="modalLabel" style="
-            font-size: 24px;
-            font-weight: bold;
-            color: #cd5225;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            line-height: 1.5;">
-            Free Consultation
-          </h1> -->
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-  
-        <!-- Body -->
-        <div class="modal-body text-center z-10" style="position: relative;">
-          <h3 class="mb-3" style="font-size: 20px; color: #cd5225; font-weight: bold; text-transform: uppercase;">GET Free Consultation</h3>
-          <p style="font-size: 16px; line-height: 1.8; color: #d6d6d6;">
-            Transform your space into a masterpiece with our expert interior design solutions. At En-Decor, 
-            we bring your dream interiors to life with elegance and style. Let’s make your home or office a 
-            place you’ll love to live and work in.
-          </p>
-          <div class="social-icons d-flex justify-content-center mt-4 gap-4">
-            <a href="https://wa.me/919886507416" target="_blank" style="color: #25D366; transition: transform 0.3s;">
-              <i class="bi bi-whatsapp" style="font-size: 2.5rem;"></i>
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=61562606288232" target="_blank" style="color: #4267B2; transition: transform 0.3s;">
-              <i class="bi bi-facebook" style="font-size: 2.5rem;"></i>
-            </a>
-            <a href="https://www.instagram.com/endecor_interiors/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank" style="color: #cd5225; transition: transform 0.3s;">
-              <i class="bi bi-instagram" style="font-size: 2.5rem;"></i>
-            </a>
-          </div>
-        </div>
-  
-        <!-- Footer -->
-        <div class="modal-footer border-0 d-flex justify-content-center z-10" style="position: relative;">
-          <button type="button" class="btn btn-light px-4 py-2" style="
-            border-radius: 25px;
-            background: #cd5225;
-            color: white;
-            font-weight: bold;
-            transition: background 0.3s ease;">
-            Close
+        overflow: hidden;
+      "
+    >
+      <!-- Modal Body -->
+      <div class="modal-body text-center" style="position: relative;">
+        <!-- Close Button -->
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+          style="
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: transparent;
+            border: none;
+            font-size: 1.5rem;
+            color: #333;
+          "
+        ></button>
+
+        <h2
+          class="mb-3"
+          style="font-size: 24px; font-weight: bold; text-transform: uppercase; color: black;"
+        >
+          Book A Free <span style="color: #f15a22;">Consultation</span>
+        </h2>
+        <p
+          class="mb-4"
+          style="font-size: 16px; line-height: 1.6; color: #333; max-width: 550px; margin: 0 auto;"
+        >
+          We are your refreshing take on a classically designed space. To know
+          more, drop in your email so we can reach out to you and help you
+          better, all for free. We also give you detailed quotations based on
+          your space size and design requirements.
+        </p>
+        <!-- Icon and Form -->
+        <div
+          class="d-flex flex-row align-items-center"
+          style="gap: 15px; margin-top: 30px;"
+        >
+          <input
+            type="email"
+            placeholder="Your email"
+            class="form-control"
+            style="
+              padding: 10px 15px;
+              border-radius: 25px;
+              max-width: 300px;
+              border: 2px solid #f15a22;
+              outline: none;
+              text-align: center;
+            "
+          />
+          <button
+            type="button"
+            class="btn"
+            style="
+              background-color: #f15a22;
+              color: white;
+              font-weight: bold;
+              padding: 8px 30px;
+              border-radius: 25px;
+              border: none;
+            "
+          >
+            Submit
           </button>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+
+
   
    
 
@@ -9924,7 +9957,7 @@
       setTimeout(function () {
         var myModal = new bootstrap.Modal(document.getElementById('consultationModal'));
         myModal.show();
-      }, 10000); // 10 seconds
+      }, 1000); // 10 seconds
     });
   </script>
 
@@ -10438,12 +10471,15 @@ window.addEventListener('scroll', function() {
                                       <strong>EN</strong><span class="line md:mt-3"></span>DECOR
                                     </p>
                                   </div>
-                                  <p class="py-5 shadow-2xl bg-[#62626263] " style="padding-bottom: 1.5rem !important;">
+                                  <!-- <p class="py-5 shadow-2xl bg-[#62626263] " style="padding-bottom: 1.5rem !important;">
                                     Where Imagination Meets Interiors – Your Space, Our Artistry.
                                     <br>
                                     Explore our world of creativity and innovation <br>
                                     Where Every Design Tells a Unique Story <br>
                                     Your inspiration, our expertise. Welcome to a world of exceptional design.
+                                  </p> -->
+                                  <p class="py-5 shadow-2xl bg-[#62626263] " style="padding-bottom: 1.5rem !important;">
+                                    En-décor Interiors believes in “Transforming Spaces and Elevating Lives
                                   </p>
                                   <p>&nbsp;</p>
                                   <p style="padding-right: 4px; animation: bounce 1s infinite;"
@@ -10490,17 +10526,27 @@ window.addEventListener('scroll', function() {
                   </style>
                   <div class="contact"></div>
                   <div id="endecor" class="et_pb_section et_pb_section_9 et_section_regular">
+                    
+                    <h1 class="text-xl sm:text-2xl md:text-4xl md:px-16 font-extrabold text-center text-[#cd5225] pt-5 uppercase tracking-wide">
+                      Bringing Your Vision to Life with a 60-Day Project Delivery Guarantee
+                    </h1>
+                    
                     <div class="et_pb_row et_pb_row_4 et_pb_equal_columns et_pb_gutters1">
                       <div class="et_pb_column et_pb_column_1_2 et_pb_column_4 et_pb_css_mix_blend_mode_passthrough">
                         <div class="et_pb_module et_pb_divider et_pb_divider_0 et_pb_divider_position_ et_pb_space">
                           <div class="et_pb_divider_internal"></div>
                         </div>
                         <div class="et_pb_module et_pb_text et_pb_text_0 et_pb_text_align_left et_pb_bg_layout_light">
-                          <div class="et_pb_text_inner">
-                            <h1>WE ARE En-Decor</h1>
-                          </div>
+                          <h1>Who We Are - Turning Concepts into Captivating Spaces</h1>
                         </div>
-                        <a href="./projects.html">
+                        <p>
+                          EN-DECOR Interiors, based in Bangalore, is a leading interior design company specializing in both residential and commercial projects. We offer end-to-end turnkey interior solutions, managing every stage from concept to completion, ensuring a seamless experience for our clients. Known for our commitment to quality and affordable luxury, we deliver stylish, functional designs that align with each client’s vision. Our services are backed by a one-year, no-questions-asked warranty, emphasizing our dedication to long-lasting satisfaction and reliable after-sales support. Whether designing homes or dynamic commercial spaces, EN-DECOR Interiors transforms spaces with creativity, practicality, and meticulous attention to detail.
+                        </p>
+                        <!-- <button class="btn button border text-white bg-[#cd5225] hover:bg-white hover:text-[#cd5225] hover:border-[#cd5225] mt-2 transition-all duration-300 ease-in-out">
+                          <a href="./About.html" style="text-decoration: none; color: inherit; font-weight: bold;">Learn More</a>
+                      </button> -->
+                      
+                        <!-- <a href="./projects.html">
                           <div class="et_pb_module et_pb_toggle et_pb_toggle_0 et_pb_toggle_item et_pb_toggle_close">
                             <h5 class="et_pb_toggle_title">DISCOVER OUR PROJECTS</h5>
                           </div>
@@ -10519,7 +10565,7 @@ window.addEventListener('scroll', function() {
                           <div class="et_pb_module et_pb_toggle et_pb_toggle_0 et_pb_toggle_item et_pb_toggle_close">
                             <h5 class="et_pb_toggle_title">Share Your Vision With Us</h5>
                           </div>
-                        </a>
+                        </a> -->
                         <!-- <div class="et_pb_module et_pb_toggle et_pb_toggle_0 et_pb_toggle_item et_pb_toggle_close">
                           <h5 class="et_pb_toggle_title">OUR PROJECTS</h5>
                           <div class="et_pb_toggle_content clearfix">
@@ -10601,7 +10647,7 @@ window.addEventListener('scroll', function() {
                       </div>
                     </div>
                   </div>
-                  <div class="et_pb_section et_pb_section_10 et_section_regular">
+                  <!-- <div class="et_pb_section et_pb_section_10 et_section_regular">
                     <div class="et_pb_row et_pb_row_5 et_pb_equal_columns et_pb_gutters1">
                       <div class="et_pb_column et_pb_column_1_2 et_pb_column_6 et_pb_css_mix_blend_mode_passthrough">
                         <div class="et_pb_module et_pb_image et_pb_image_1 et_pb_image_sticky">
@@ -10623,13 +10669,14 @@ window.addEventListener('scroll', function() {
                       <div
                         class="et_pb_column et_pb_column_1_2 et_pb_column_7 et_pb_css_mix_blend_mode_passthrough et-last-child">
                         <div class="et_pb_module et_pb_divider et_pb_divider_1 et_pb_divider_position_ et_pb_space">
+                          
                          
                           <div class="et_pb_divider_internal"></div>
                         </div>
                         
                         <div class="et_pb_module et_pb_text et_pb_text_1 et_pb_text_align_left et_pb_bg_layout_light">
                           <div class="et_pb_text_inner">
-                            <h1 class="uppercase">OUR Location</h1>
+                            <h1 class="uppercase">Who We Are - Turning Concepts into Captivating Spaces</h1>
                           </div>
                         </div>
 
@@ -10638,14 +10685,9 @@ window.addEventListener('scroll', function() {
                         </div>
                         <div class="et_pb_module et_pb_text et_pb_text_3 et_pb_text_align_left et_pb_bg_layout_light">
                           <div class="et_pb_text_inner">
-                            <!-- 221, 8TH MAIN ROAD
-3RD STAGE,
-PILLANA GARDEN
-BANGALORE-560045 -->
+                     
                             <p>
-                              <!-- 221, 8TH MAIN ROAD,<br />3RD STAGE, PILLANA GARDEN <br> -->
-                              BANGALORE<br />
-                              <a href="tel:+919886507416">+919886507416</a>
+                              We Known for our commitment to quality and affordable luxury, we deliver stylish, functional designs that align with each client’s vision. Our services are backed by a one-year, no-questions-asked warranty, emphasizing our dedication to long-lasting satisfaction and reliable after-sales support. Whether designing homes or dynamic commercial spaces, EN-DECOR Interiors transforms spaces with creativity, practicality, and meticulous attention to detail.
                             </p>
                           </div>
                         </div>
@@ -10672,11 +10714,91 @@ BANGALORE-560045 -->
 Our eye for meticulous details helps us to understand client needs, formulate seamless design strategies and fashion flawless spaces for those who matter the most to us. 
 That's You...
 
-                          <!-- At En-decor, we are passionate about transforming spaces into extraordinary environments. With a dedication to excellence in interior design, we specialize in crafting stunning concepts for residential, commercial, retail, hospitality, and educational institutions. -->
+                     
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
+
+
+<!-- Why Choose En-decors Interiors Section -->
+<section class="py-16 bg-gradient-to-r from-gray-100 via-white to-gray-100">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <!-- Heading -->
+    <h2 class="text-4xl font-extrabold text-center text-[#cd5225] mb-8 uppercase tracking-wide">
+      Why Choose En-decors Interiors?
+    </h2>
+    <p class="text-center max-w-3xl mx-auto mb-12 text-gray-600 leading-relaxed">
+      At En-decors Interiors, we transform spaces with exceptional craftsmanship, personalized designs, and an unwavering commitment to quality, functionality, and elegance.
+    </p>
+
+    <!-- Features Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-center">
+      <!-- Feature 1 -->
+      <div class="flex flex-col items-center bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition-transform">
+        <i class="fas fa-award text-5xl text-[#cd5225] mb-4"></i>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">
+          Exceptional Quality and Craftsmanship
+        </h3>
+        <p class="text-gray-600">
+          We are dedicated to using top-quality materials and skilled craftsmanship, ensuring every detail in your space is built to last.
+        </p>
+      </div>
+      <!-- Feature 2 -->
+      <div class="flex flex-col items-center bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition-transform">
+        <i class="fas fa-user-friends text-5xl text-[#cd5225] mb-4"></i>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">
+          Personalized Client-Centered Designs
+        </h3>
+        <p class="text-gray-600">
+          Your vision is our priority. Our team works closely with you to create a design that aligns with your unique style, needs, and lifestyle.
+        </p>
+      </div>
+      <!-- Feature 3 -->
+      <div class="flex flex-col items-center bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition-transform">
+        <i class="fas fa-gem text-5xl text-[#cd5225] mb-4"></i>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">
+          Affordable Luxury with No Compromise
+        </h3>
+        <p class="text-gray-600">
+          Experience the perfect blend of luxury and affordability, as we specialize in creating high-end interiors that offer elegance and superior quality without exceeding your budget.
+        </p>
+      </div>
+      <!-- Feature 4 -->
+      <div class="flex flex-col items-center bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition-transform">
+        <i class="fas fa-handshake text-5xl text-[#cd5225] mb-4"></i>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">
+          Comprehensive Engagement and Involvement
+        </h3>
+        <p class="text-gray-600">
+          We are deeply engaged in every stage of your project, maintaining open and transparent communication from start to finish for a stress-free experience.
+        </p>
+      </div>
+      <!-- Feature 5 -->
+      <div class="flex flex-col items-center bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition-transform">
+        <i class="fas fa-home text-5xl text-[#cd5225] mb-4"></i>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">
+          Lifestyle-Based, Customized Designs
+        </h3>
+        <p class="text-gray-600">
+          Our design approach goes beyond aesthetics, focusing on creating spaces that seamlessly blend style, functionality, and your day-to-day needs.
+        </p>
+      </div>
+      <!-- Feature 6 -->
+      <div class="flex flex-col items-center bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition-transform">
+        <i class="fas fa-tools text-5xl text-[#cd5225] mb-4"></i>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">
+          Reliable After-Sales Support
+        </h3>
+        <p class="text-gray-600">
+          Our commitment to your satisfaction doesn’t end with delivery. We provide dedicated after-sales support, ensuring your interiors remain in perfect condition over time.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
                   <!-- TESTIMONIALS -->
 <link
@@ -10718,7 +10840,7 @@ keenSliderNext.addEventListener('click', () => keenSlider.next())
 
 
    <!-- We Are Different Section -->
-   <section class="py-16 bg-gray-50">
+   <!-- <section class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2
         class="text-3xl font-bold text-center text-orange-600 mb-8"
@@ -10814,64 +10936,85 @@ keenSliderNext.addEventListener('click', () => keenSlider.next())
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <!-- Happy Clients Section -->
-  <section class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-center text-orange-600 mb-8">Our Happy Clients</h2>
-        <p class="text-center max-w-2xl mx-auto mb-12 text-gray-700">
-            We take pride in the relationships we've built with our clients. Here are some of the brands we've had the pleasure to work with.
-        </p>
-
-        <!-- Swiper Slider -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                <div class="swiper-slide flex justify-center">
-                    <img src="https://via.placeholder.com/150" alt="Client Logo 1" class="h-20 w-auto">
-                </div>
-                <!-- Slide 2 -->
-                <div class="swiper-slide flex justify-center">
-                    <img src="https://via.placeholder.com/150" alt="Client Logo 2" class="h-20 w-auto">
-                </div>
-                <!-- Slide 3 -->
-                <div class="swiper-slide flex justify-center">
-                    <img src="https://via.placeholder.com/150" alt="Client Logo 3" class="h-20 w-auto">
-                </div>
-                <!-- Slide 4 -->
-                <div class="swiper-slide flex justify-center">
-                    <img src="https://via.placeholder.com/150" alt="Client Logo 4" class="h-20 w-auto">
-                </div>
-                <!-- Slide 5 -->
-                <div class="swiper-slide flex justify-center">
-                    <img src="https://via.placeholder.com/150" alt="Client Logo 5" class="h-20 w-auto">
-                </div>
-                <!-- Add more slides as needed -->
-            </div>
-        </div>
-    </div>
-</section>
-<!-- FREE CONSULTATION -->
-<section class="relative bg-gradient-to-r from-black via-gray-800 to-black text-white py-24 text-center">
-  <!-- Background Image Overlay -->
-  <div class="absolute inset-0 bg-[url('https://t3.ftcdn.net/jpg/07/58/98/48/360_F_758984801_ZQWhRsYnmE3nNm7JCduBJ2dtVhMcyX07.jpg')] bg-cover bg-center opacity-40"></div>
-  
-  <!-- Content -->
-  <div class="relative z-10 max-w-4xl mx-auto px-4">
-    <h1 class="text-4xl md:text-5xl font-bold">INTERIOR DESIGNERS IN BANGALORE</h1>
-    <p class="mt-4 text-lg md:text-xl">
-      Delivering Thoughtful Innovations And Products In Architecture<br>
-      We Are The Luxury Interior Designers In Bangalore With<br>
-      Over 1000+ Completed Projects.
+ <!-- Happy Clients Section -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center text-orange-600 mb-8">Our Happy Clients</h2>
+    <p class="text-center max-w-2xl mx-auto mb-12 text-gray-700">
+      We take pride in the relationships we've built with our clients. Here are some of the brands we've had the pleasure to work with.
     </p>
-    <div class="social-icons text-center mt-4">
-      <a href="https://wa.me/919886507416" target="_blank"><i class="bi bi-whatsapp" style="font-size: 2rem;"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=61562606288232" target="_blank"><i class="bi bi-facebook" style="font-size: 2rem;"></i></a>
-      <a href="https://www.instagram.com/endecor_interiors/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="bi bi-instagram" style="font-size: 2rem;"></i></a>
+
+    <!-- Swiper Slider -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide flex justify-center">
+          <i class="fab fa-apple text-6xl text-gray-600"></i>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide flex justify-center">
+          <i class="fab fa-google text-6xl text-gray-600"></i>
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide flex justify-center">
+          <i class="fab fa-amazon text-6xl text-gray-600"></i>
+        </div>
+        <!-- Slide 4 -->
+        <div class="swiper-slide flex justify-center">
+          <i class="fab fa-microsoft text-6xl text-gray-600"></i>
+        </div>
+        <!-- Slide 5 -->
+        <div class="swiper-slide flex justify-center">
+          <i class="fab fa-facebook text-6xl text-gray-600"></i>
+        </div>
+        <!-- Slide 6 -->
+        <div class="swiper-slide flex justify-center">
+          <i class="fab fa-twitter text-6xl text-gray-600"></i>
+        </div>
+        <!-- Add more slides as needed -->
+      </div>
     </div>
   </div>
 </section>
+
+<!-- SwiperJS CSS & Script -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
+<!-- FREE CONSULTATION -->
+<!-- <section class="relative bg-gradient-to-r from-white via-gray-100 to-white text-gray-800 py-24 text-center shadow-lg">
+  <div class="absolute inset-0 bg-[url('https://t3.ftcdn.net/jpg/07/58/98/48/360_F_758984801_ZQWhRsYnmE3nNm7JCduBJ2dtVhMcyX07.jpg')] bg-cover bg-center opacity-20"></div>
+  
+  <div class="relative z-10 max-w-4xl mx-auto px-6">
+    <h1 class="text-4xl md:text-5xl font-extrabold uppercase tracking-wide" style="color: #cd5225;">
+      Interior Designers in Bangalore
+    </h1>
+    <p class="mt-6 text-lg md:text-xl leading-relaxed text-gray-600">
+      Delivering thoughtful innovations and products in architecture.<br>
+      We are luxury interior designers in Bangalore with<br>
+      over <span class="font-bold text-gray-800">1000+</span> completed projects.
+    </p>
+    <div class="mt-8">
+      <a href="https://wa.me/919886507416" target="_blank" class="inline-block mx-2">
+        <i class="bi bi-whatsapp text-3xl text-green-500 hover:scale-110 transition-transform"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61562606288232" target="_blank" class="inline-block mx-2">
+        <i class="bi bi-facebook text-3xl text-blue-600 hover:scale-110 transition-transform"></i>
+      </a>
+      <a href="https://www.instagram.com/endecor_interiors/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank" class="inline-block mx-2">
+        <i class="bi bi-instagram text-3xl text-pink-500 hover:scale-110 transition-transform"></i>
+      </a>
+    </div>
+    <button class="mt-8 px-6 py-3 bg-[#cd5225] text-white rounded-full text-lg font-semibold hover:bg-[#a8411e] transition-all">
+      Get a Free Consultation
+    </button>
+  </div>
+</section> -->
+
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
