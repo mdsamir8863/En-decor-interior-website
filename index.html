@@ -3508,12 +3508,13 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
+      height: 97vh !important;
       overflow: hidden;
       display: block;
       pointer-events: none;
       -webkit-transition: display 0.3s;
       transition: display 0.3s;
+      /* border: 10px solid red !important; */
     }
 
     .et_pb_section_video_bg.et_pb_section_video_bg_hover,
@@ -9850,12 +9851,12 @@
 
 
 <!-- Modal Popup -->
-<div style="z-index: 999999 !important;"
+<div style="z-index: 999999999999999 !important; overflow: scroll;"
   id="consultationModal"
-  class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-50"
+  class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-50 h-full overflow-scroll"
 >
   <div
-    class="bg-[#CE9C49] text-black rounded-xl shadow-lg overflow-hidden relative w-[90%] max-w-md"
+    class="bg-[#E6E6FA] text-black rounded-xl shadow-lg overflow-hidden relative w-[90%] h-[85%] max-w-md"
   >
     <!-- Close Button -->
     <button
@@ -9866,7 +9867,7 @@
     </button>
 
     <!-- Modal Content -->
-    <div class="p-6 text-center">
+    <div class="p-4 text-center">
       <!-- Heading -->
       <h2 class="text-xl font-bold uppercase">
         Book A Free <span class="text-[#f15a22]">Consultation</span>
@@ -9876,29 +9877,50 @@
       <img
         src="./assets/sofaPopup.png"
         alt="Sofa"
-        class="h-44 md:h-60 mx-auto rounded-lg object-cover my-4"
+        class="h-28 mx-auto rounded-lg object-cover mb-2"
       />
 
-      <!-- Email Input and Button -->
-      <div class="flex flex-col md:flex-row items-center gap-4 mt-4">
+      <!-- Form Fields -->
+      <form class="space-y-4">
+        <!-- Name Input -->
+        <input
+          style="padding: 10px;"
+          type="text"
+          placeholder="Your Name"
+          class="w-full border-2 border-[#f15a22] rounded-full text-center focus:outline-none focus:ring-2 focus:ring-[#f15a22] focus:ring-opacity-50 placeholder-gray-500"
+          required
+        />
+
+        <!-- Phone Number Input -->
+        <input
+          style="padding: 10px;"
+          type="tel"
+          placeholder="Your Phone Number"
+          class="w-full border-2 border-[#f15a22] rounded-full text-center focus:outline-none focus:ring-2 focus:ring-[#f15a22] focus:ring-opacity-50 placeholder-gray-500"
+          required
+        />
+
         <!-- Email Input -->
-        <input style="padding: 10px;"
-        type="email"
-        placeholder="Your email"
-        class="w-full border-2 border-[#f15a22] rounded-full text-center focus:outline-none focus:ring-2 focus:ring-[#f15a22] focus:ring-opacity-50 placeholder-gray-500"
-       />
-      
+        <input
+          style="padding: 10px;"
+          type="email"
+          placeholder="Your Email"
+          class="w-full border-2 border-[#f15a22] rounded-full text-center focus:outline-none focus:ring-2 focus:ring-[#f15a22] focus:ring-opacity-50 placeholder-gray-500"
+          required
+        />
 
         <!-- Submit Button -->
         <button
-          class="w-full md:w-auto px-6 py-3 bg-[#f15a22] text-white font-bold rounded-full hover:bg-[#e0521e] transition duration-200"
+          type="submit"
+          class="w-full px-6 py-3 bg-[#f15a22] text-white font-bold rounded-full hover:bg-[#e0521e] transition duration-200"
         >
           Submit
         </button>
-      </div>
+      </form>
     </div>
   </div>
 </div>
+
 
 
 
@@ -9909,7 +9931,7 @@
     const modal = document.getElementById("consultationModal");
     modal.classList.remove("hidden");
     modal.classList.add("flex");
-  }, 10000); 
+  }, 1000); 
 
   // Close the modal when the close button is clicked
   document.getElementById("closeModal").addEventListener("click", () => {
@@ -10032,7 +10054,7 @@
     </button>
     </div>
     <!-- desktop navbar -->
-   <ul class="fixed flex item-center gap-10 desktoNav right-16 z-999999" style="z-index: 99999999999;">
+   <ul class="fixed flex item-center gap-10 desktoNav right-16 z-999999" style="z-index: 99999;">
     <li> <a class="text-[#cd5225] font-bold text-lg uppercase" href="./index.html">Home</a></li>
     <li> <a class="text-lg uppercase" href="./About.html">About</a></li>
     <li> <a class="text-lg uppercase" href="./services.html">Services</a></li>
@@ -10422,7 +10444,7 @@ window.addEventListener('scroll', function() {
                 <div class="et_builder_inner_content et_pb_gutters3">
                   <div class="et_pb_section et_pb_section_8 et_pb_fullwidth_section et_section_regular">
                     <div
-                      class="et_pb_module et_pb_fullwidth_slider_0 hero-height et_pb_slider et_pb_slider_no_arrows et_slider_auto et_slider_speed_4000 et_slider_auto_ignore_hover">
+                      class="et_pb_module et_pb_fullwidth_slider_0 hero-height et_pb_slider et_pb_slider_no_arrows et_slider_auto et_slider_speed_4000 et_slider_auto_ignore_hover" style="height: 97vh !important;">
                       <div class="et_pb_slides">
                         <div
                           class="et_pb_slide et_pb_slide_0 et_pb_section_video et_pb_preload et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slider_with_overlay et-pb-active-slide"
