@@ -9531,19 +9531,20 @@
                 <a href="/">Home</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31">
-                <a href="./About.html">About</a>
+                <a href="./leading_interior_design_company.html">About</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30">
-                <a href="./services.html">Services</a>
-                <a href="./blogs.html">Blogs</a>
+                <a href="./residential_and_commercial_interior_designers.html">Services</a>
               </li>
-
+              <li>
+                <a class="text-lg uppercase" href="./best_design_consultants.html">Blogs</a>
+              </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28">
-                <a href="./projects.html">Projects</a>
+                <a href="./customized_interior_design_and_furniture_projects.html">Projects</a>
               </li>
 
               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
-                <a href="./contact.html">Contact</a>
+                <a href="./contact_us_for_best_interior_designers.html">Contact</a>
               </li>
             </ul>
           </nav>
@@ -9566,17 +9567,17 @@
     <!-- desktop navbar -->
     <ul class="fixed flex item-center gap-10 desktoNav right-16 z-999999" style="z-index: 99999999999;">
       <li><a class="text-lg uppercase" href="./index.html">Home</a></li>
-      <li><a class="text-lg uppercase" href="./About.html">About</a></li>
+      <li><a class="text-lg uppercase" href="./leading_interior_design_company.html">About</a></li>
       <li>
-        <a class="text-lg uppercase" href="./services.html">Services</a>
+        <a class="text-lg uppercase" href="./residential_and_commercial_interior_designers.html">Services</a>
       </li>
       <li>
-        <a class="text-[#cd5225] font-bold text-lg uppercase" href="./blogs.html">Blogs</a>
+        <a class="text-lg uppercase" href="./best_design_consultants.html">Blogs</a>
       </li>
       <li>
-        <a class="text-lg uppercase" href="./projects.html">Projects</a>
+        <a class="text-[#cd5225] font-bold text-lg uppercase" href="./customized_interior_design_and_furniture_projects.html">Projects</a>
       </li>
-      <li><a class="text-lg uppercase" href="./contact.html">Contact</a></li>
+      <li><a class="text-lg uppercase" href="./contact_us_for_best_interior_designers.html">Contact</a></li>
     </ul>
     <style>
       @media (max-width: 941px) {
@@ -9950,225 +9951,641 @@
         </div>
       </header>
       <div id="et-main-area">
-
-
-        <style>
-          .design-root {
-              margin: 0;
-              padding: 0;
-              box-sizing: border-box;
-              position: relative;
-              z-index: 999;
-              font-family: 'Cormorant Garamond', 'Times New Roman', serif;
-          }
-  
-          .design-canvas {
-              background: #faf9f8;
-              color: #2c2c2c;
-              line-height: 1.6;
-              position: relative;
-              z-index: 999;
-          }
-  
-          .masthead-wrapper {
-              background: #2c2c2c;
-              color: #f8f5f2;
-              padding: 3rem 2rem;
-              text-align: center;
-              margin-bottom: 3rem;
-          }
-  
-          .masthead-title {
-              font-size: 3rem;
-              margin-bottom: 1rem;
-              color: #f8f5f2;
-              font-weight: 300;
-              letter-spacing: 2px;
-          }
-  
-          .masthead-subtitle {
-              font-size: 1.2rem;
-              opacity: 0.9;
-              font-style: italic;
-          }
-  
-          .content-wrapper {
-              max-width: 1400px;
-              margin: 0 auto;
-              padding: 0 2rem;
-          }
-  
-          .article-grid {
-              display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-              gap: 2.5rem;
-              padding: 1rem;
-          }
-  
-          .design-card {
-              background: white;
-              border: none;
-              overflow: hidden;
-              transition: transform 0.3s ease, box-shadow 0.3s ease;
-              box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-              cursor: pointer;
-          }
-  
-          .design-card:hover {
-              transform: translateY(-5px);
-              box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-          }
-  
-          .design-card__image {
-              width: 100%;
-              height: 300px;
-              object-fit: cover;
-          }
-  
-          .design-card__content {
-              padding: 2rem;
-          }
-  
-          .design-card__category {
-              color: #a67f5d;
-              text-transform: uppercase;
-              font-size: 0.9rem;
-              letter-spacing: 2px;
-              margin-bottom: 0.5rem;
-          }
-  
-          .design-card__headline {
-              font-size: 1.8rem;
-              margin-bottom: 1rem;
-              color: #2c2c2c;
-              font-weight: 400;
-              line-height: 1.3;
-          }
-  
-          .design-card__preview {
-              color: #666;
-              margin-bottom: 1.5rem;
-              font-family: 'Nunito Sans', sans-serif;
-          }
-  
-          .design-card__meta {
-              display: flex;
-              align-items: center;
-              color: #888;
-              font-size: 0.9rem;
-              font-family: 'Nunito Sans', sans-serif;
-          }
-  
-          .design-card__meta-icon {
-              margin-right: 0.5rem;
-          }
-  
-          .design-card__cta {
-              display: inline-block;
-              margin-top: 1.5rem;
-              color: #a67f5d;
-              text-decoration: none;
-              font-weight: 500;
-              text-transform: uppercase;
-              letter-spacing: 1px;
-              font-size: 0.9rem;
-              border-bottom: 1px solid transparent;
-              transition: border-bottom-color 0.3s ease;
-          }
-  
-          .design-card__cta:hover {
-              border-bottom-color: #a67f5d;
-          }
-  
-          @media (max-width: 768px) {
-              .masthead-wrapper {
-                  padding: 2rem 1rem;
-              }
-  
-              .masthead-title {
-                  font-size: 2.2rem;
-              }
-  
-              .article-grid {
-                  grid-template-columns: 1fr;
-              }
-  
-              .design-card__image {
-                  height: 250px;
-              }
-          }
-      </style>
-
-
-        <div class="flex" style="display: flex; padding: 50px;"></div>
-
-
-        <section class="design-canvas">
-          <section class="masthead-wrapper">
-              <div class="content-wrapper">
-                  <h1 class="masthead-title">SPACES & STYLE</h1>
-                  <p class="masthead-subtitle">Curating beautiful spaces</p>
-              </div>
-          </section>
-      
-          <main class="content-wrapper">
-              <div class="article-grid">
-
-                  <article class="design-card" onclick="window.location.href='custom-interior-design-solutions.html'">
-
-                      <img src="./blogs/blog1-1.png" alt="Minimalist Living Room" class="design-card__image">
-                      <div class="design-card__content">
-                          <div class="design-card__category"></div>
-                          <h2 class="design-card__headline">Expert Interior Design for Home & Office | En-decor Interiors</h2>
-                          <p class="design-card__preview">Discover expert interior design services to transform your home, office, and Commercial space. From concept to execution, we bring your vision to life.</p>
-                          <div class="design-card__meta">
-                              
-                              <i class="far fa-clock design-card__meta-icon" style="margin-left: 1.5rem;"></i> 5 min read
+        <div id="main-content">
+          <article id="post-20" class="post-20 page type-page status-publish has-post-thumbnail hentry">
+            <div class="entry-content">
+              <div class="et-l et-l--post">
+                <div class="et_builder_inner_content et_pb_gutters3">
+                  <div class="et_pb_section et_pb_section_8 et_pb_fullwidth_section et_section_regular hidden">
+                    <div class="et_pb_module et_pb_fullwidth_slider_0 hero-height et_pb_slider">
+                      <div class="et_pb_slides">
+                        <div
+                          class="et_pb_slide et_pb_slide_0 et_pb_section_video et_pb_preload et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slider_with_overlay et-pb-active-slide"
+                          data-slide-id="et_pb_slide_0">
+                          <div class="et_pb_slide_overlay_container"></div>
+                          <div class="et_pb_container clearfix">
+                            <div class="et_pb_slider_container_inner">
+                              <div class="et_pb_slide_description">
+                                <div class="et_pb_slide_content">
+                                  <div class="elevated">
+                                    <p>
+                                      <strong>EN-DECOR</strong><span class="elevated-lines"></span>PROJECTS
+                                    </p>
+                                  </div>
+                                  <p class="py-5 shadow-2xl bg-[#62626263]" style="padding-bottom: 1.5rem !important;">
+                                    Residential | Commercial | Retail |
+                                    Hospitality | Educational Institutions
+                                    <br />
+                                    Where Every Design Tells a Unique Story
+                                  </p>
+                                  <p>&nbsp;</p>
+                                  <p style="padding-right: 4px;" class="flex item-center justify-center m-auto">
+                                    <a href="#endecor">
+                                      <img decoding="async" alt="" width="33" height="21"
+                                        data-src="./assets/icons/arrow.png"
+                                        class="wp-image-135 alignnone size-full ls-is-cached lazyloaded"
+                                        src="./assets/icons/arrow.png" /><noscript><img decoding="async"
+                                          src="./assets/icons/arrow.png" alt="" class="wp-image-135 alignnone size-full"
+                                          width="33" height="21" /> </noscript></a>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <a href="./custom-interior-design-solutions.html" class="design-card__cta">Continue Reading</a>
-                      </div>
-                  </article>
-
-                  <article class="design-card" onclick="window.location.href='custom-made-kitchen-interiors.html'">
-                    
-                    <img src="./blogs/blog2-1.png" alt="Minimalist Living Room" class="design-card__image">
-                    <div class="design-card__content">
-                        <div class="design-card__category"></div>
-                        <h2 class="design-card__headline">Custom Furniture Solutions for Kitchens in Bangalore</h2>
-                        <p class="design-card__preview">Transform your kitchen with bespoke furniture solutions in Bangalore. Maximize space, personalize design, and choose luxury materials for a timeless look.</p>
-                        <div class="design-card__meta">
-                            
-                            <i class="far fa-clock design-card__meta-icon" style="margin-left: 1.5rem;"></i> 4.5 min read
+                          <span class="et_pb_section_video_bg">
+                            <!-- <video controls autoplay="false" autoplay playsinline muted>
+                                <source
+                                  type="video/mp4"
+                                  src="./videos/endecore-video.mov"
+                                />
+                              </video> -->
+                            <!-- <img style="filter: brightness(.2);" src="./assets/desk-1.jpg" alt=""> -->
+                          </span>
                         </div>
-                        <a href="./custom-made-kitchen-interiors.html" class="design-card__cta">Continue Reading</a>
-                    </div>
-                </article>
-
-
-                <article class="design-card" onclick="window.location.href='bespoke-interior-solutions-bangalore.html'">
-                    
-                  <img src="./blogs/blog3-1.png" alt="Minimalist Living Room" class="design-card__image">
-                  <div class="design-card__content">
-                      <div class="design-card__category"></div>
-                      <h2 class="design-card__headline">Best Interior Design Solutions | Custom Furniture in Bangalore</h2>
-                      <p class="design-card__preview">Discover bespoke furniture solutions in Bangalore. Transform homes, offices, and hospitality spaces with tailored designs blending style and functionality</p>
-                      <div class="design-card__meta">
-                          
-                          <i class="far fa-clock design-card__meta-icon" style="margin-left: 1.5rem;"></i> 7 min read
                       </div>
-                      <a href="./bespoke-interior-solutions-bangalore.html" class="design-card__cta">Continue Reading</a>
+                    </div>
                   </div>
-              </article>
-      
- 
+                  <div id="residential" class="et_pb_section et_pb_section_9 et_section_regular">
+                    <div id="endecor" class="et_pb_row et_pb_row_5 et_pb_equal_columns">
+                      <div class="et_pb_column et_pb_column_3_5 et_pb_column_4 et_pb_css_mix_blend_mode_passthrough">
+                        <div class="et_pb_module et_pb_text et_pb_text_1 et_pb_text_align_left et_pb_bg_layout_light">
+                          <div class="et_pb_text_inner">
+                            <h1>Residential</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="et_pb_column et_pb_column_2_5 et_pb_column_5 et_pb_css_mix_blend_mode_passthrough et-last-child">
+                        <div class="et_pb_module et_pb_text et_pb_text_2 et_pb_text_align_right et_pb_bg_layout_light">
+                          <div class="et_pb_text_inner">
+                            <p>
+                              <a href="#residential"><span style="color: #cd5225 !important;">Residential</span></a>
+                            </p>
+                            <!-- <p>
+                                <a href="#Hospitality">Hospitality</a>
+                              </p> -->
+                            <p><a href="#commercial">Commerical</a></p>
+                            <!-- <p>
+                                <a href="#retailprojects">Retail Projects</a>
+                              </p> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="et_pb_row et_pb_row_7 w-[95%] md:w-[80%]">
+                      <div
+                        class="et_pb_column et_pb_column_4_4 et_pb_column_7 et_pb_css_mix_blend_mode_passthrough et-last-child">
+                        <div
+                          class="et_pb_module et_pb_de_mach_archive_loop et_pb_de_mach_archive_loop_0 clearfix main-loop loadmore-align- grid-layout-grid main-archive-loop">
+                          <div class="et_pb_module_inner">
+                            <div class="dmach-before-posts"></div>
+                            <div class="filter-param-tags"></div>
+                            <div class="et_pb_row et_pb_row_108 et_pb_equal_columns">
+                              <div
+                                class="et_pb_column et_pb_column_4_4 et_pb_column_108 et_pb_css_mix_blend_mode_passthrough et-last-child">
+                                <div
+                                  class="et_pb_module et_pb_text et_pb_text_17 et_pb_text_align_left et_pb_bg_layout_light">
+                                  <div class="et_pb_text_inner md:hidden">
+                                    <h1 class="md:hidden">RESIDENTIAL</h1>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 w-full">
+                              <div>
+                                <img class="h-auto max-w-full rounded-lg" src="./assets/residencial-images/r1.jpg"
+                                  alt="" />
+                              </div>
+                              <div>
+                                <img class="h-auto max-w-full rounded-lg" src="./assets/residencial-images/r2.jpg"
+                                  alt="" />
+                              </div>
+                              <div>
+                                <img class="h-auto max-w-full rounded-lg md:h-[24.2rem]"
+                                  src="./assets/residencial-images/r4.jpg" alt="" />
+                              </div>
+                              <div>
+                                <img class="h-auto max-w-full rounded-lg md:m" src="./assets/residencial-images/r5.jpg"
+                                  alt="" />
+                              </div>
+                            </div>
+                            <!-- filtered-posts-cont -->
+                            <div class="dmach-after-posts"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div
+                      id="Hospitality"
+                      class="et_pb_section et_pb_section_30 et_section_regular"
+                    >
+                      <div class="et_pb_row et_pb_row_49 et_pb_equal_columns">
+                        <div
+                          class="et_pb_column et_pb_column_3_5 et_pb_column_48 et_pb_css_mix_blend_mode_passthrough"
+                        >
+                          <div
+                            class="et_pb_module et_pb_text et_pb_text_7 et_pb_text_align_left et_pb_bg_layout_light"
+                          >
+                            <div class="et_pb_text_inner">
+                              <h1>Hospitality</h1>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="et_pb_column et_pb_column_2_5 et_pb_column_49 et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column_empty"
+                        ></div>
+                      </div>
+                      <div class="et_pb_row et_pb_row_50 et_pb_equal_columns">
+                        <div
+                          class="et_pb_column et_pb_column_4_4 et_pb_column_50 et_pb_css_mix_blend_mode_passthrough et-last-child"
+                        >
+                          <div
+                            class="et_pb_module et_pb_text et_pb_text_11 et_pb_text_align_left et_pb_bg_layout_light"
+                          >
+                            <div class="et_pb_text_inner">
+                              <h1>Hospitality</h1>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="et_pb_row et_pb_row_51">
+                        <div
+                          class="et_pb_column et_pb_column_4_4 et_pb_column_51 et_pb_css_mix_blend_mode_passthrough et-last-child"
+                        >
+                          <div
+                            class="et_pb_module et_pb_de_mach_archive_loop et_pb_de_mach_archive_loop_1 clearfix main-loop loadmore-align- grid-layout-grid main-archive-loop"
+                          >
+                            <div class="et_pb_module_inner">
+                              <div class="dmach-before-posts"></div>
+                              <div class="filter-param-tags"></div>
+                              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 w-full">
+                                <div>
+                                  <img
+                                    class="h-auto max-w-full rounded-lg"
+                                    src="./assets/Hospitality/img-1.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div>
+                                  <img
+                                    class="h-auto max-w-full rounded-lg"
+                                    src="./assets/Hospitality/indoor-hotel-view.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div>
+                                  <img
+                                    class="h-auto max-w-full rounded-lg"
+                                    src="./assets/Hospitality/img-3.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div>
+                                  <img
+                                    class="h-auto max-w-full rounded-lg"
+                                    src="./assets/Hospitality/img-4.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="dmach-after-posts"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+                  <div id="commercial" class="et_pb_section et_pb_section_58 et_section_regular"
+                    style="padding-bottom: 4rem;">
+                    <div class="et_pb_row et_pb_row_107 et_pb_equal_columns">
+                      <div class="et_pb_column et_pb_column_3_5 et_pb_column_106 et_pb_css_mix_blend_mode_passthrough">
+                        <div class="et_pb_module et_pb_text et_pb_text_13 et_pb_text_align_left et_pb_bg_layout_light">
+                          <div class="et_pb_text_inner">
+                            <h1>Commercial</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="et_pb_column et_pb_column_2_5 et_pb_column_107 et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column_empty">
+                      </div>
+                    </div>
+                    <div class="et_pb_row et_pb_row_108 et_pb_equal_columns">
+                      <div
+                        class="et_pb_column et_pb_column_4_4 et_pb_column_108 et_pb_css_mix_blend_mode_passthrough et-last-child">
+                        <div class="et_pb_module et_pb_text et_pb_text_17 et_pb_text_align_left et_pb_bg_layout_light">
+                          <div class="et_pb_text_inner">
+                            <h1>Commercial</h1>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="et_pb_row et_pb_row_109">
+                      <div
+                        class="et_pb_column et_pb_column_4_4 et_pb_column_109 et_pb_css_mix_blend_mode_passthrough et-last-child">
+                        <div
+                          class="et_pb_module et_pb_de_mach_archive_loop et_pb_de_mach_archive_loop_2 clearfix main-loop loadmore-align- grid-layout-grid main-archive-loop">
+                          <div class="et_pb_module_inner">
+                            <div class="dmach-before-posts"></div>
+                            <div class="filter-param-tags"></div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 w-full">
+                              <div>
+                                <img class="h-auto max-w-full rounded-lg"
+                                  src="./assets/same-size-image/IMG-20231001-WA0044.png" alt="" />
+                              </div>
+                              <div>
+                                <img class="h-auto max-w-full rounded-lg"
+                                  src="./assets/same-size-image/IMG-20231001-WA0037.png" alt="" />
+                              </div>
+                              <div>
+                                <img class="h-auto max-w-full rounded-lg"
+                                  src="./assets/same-size-image/IMG-20231001-WA0063.png" alt="" />
+                              </div>
+                              <div>
+                                <img class="h-auto max-w-full rounded-lg"
+                                  src="./assets/same-size-image/IMG-20231001-WA0059.png" alt="" />
+                              </div>
+                            </div>
+                            <!-- filtered-posts-cont -->
+                            <div class="dmach-after-posts"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="retailprojects" class="et_pb_section et_pb_section_67 et_section_regular">
+                    <div class="et_pb_row et_pb_row_127 et_pb_equal_columns">
+                      <div class="et_pb_column et_pb_column_3_5 et_pb_column_126 et_pb_css_mix_blend_mode_passthrough">
+                        <div class="et_pb_module et_pb_text et_pb_text_19 et_pb_text_align_left et_pb_bg_layout_light"
+                          style="margin-bottom: 1rem !important;">
+                          <div class="et_pb_text_inner">
+                            <h1>More Projects</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="et_pb_column et_pb_column_2_5 et_pb_column_127 et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column_empty">
+                      </div>
+                    </div>
+                    <div class="et_pb_row et_pb_row_128 et_pb_equal_columns">
+                      <div
+                        class="et_pb_column et_pb_column_4_4 et_pb_column_128 et_pb_css_mix_blend_mode_passthrough et-last-child">
+                        <div class="et_pb_module et_pb_text et_pb_text_23 et_pb_text_align_left et_pb_bg_layout_light">
+                          <div class="et_pb_text_inner">
+                            <h1>More Projects</h1>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="et_pb_row et_pb_row_129">
+                        <div
+                          class="et_pb_column et_pb_column_4_4 et_pb_column_129 et_pb_css_mix_blend_mode_passthrough et-last-child"
+                        >
+                          <div
+                            class="et_pb_module et_pb_de_mach_archive_loop et_pb_de_mach_archive_loop_3 clearfix main-loop loadmore-align- grid-layout-grid main-archive-loop"
+                          >
+                            <div class="et_pb_module_inner">
+                              <div class="dmach-before-posts"></div>
+                              <div class="filter-param-tags"></div>
+
+                              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 w-full">
+                                <div>
+                                  <img
+                                    class="h-auto max-w-full rounded-lg"
+                                    src="./assets/same-size-image/IMG-20230925-WA0003.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <div>
+                                  <img
+                                    class="h-auto max-w-full rounded-lg"
+                                    src="./assets/residencial-images/r3.jpg"
+                                    alt=""
+                                    />
+                                  </div>
+                                  <div>
+                                    <img
+                                    src="./assets/commercial-image/3d-rendering-modern-loft-office-lounge-co-working-space.jpg"
+                                    class="h-auto max-w-full rounded-lg"
+                                    alt=""
+                                  />
+                                </div>
+                               
+                                <div>
+                                  <img
+                                    class="h-auto max-w-full rounded-lg"
+                                    src="./assets/commercial-image/modern-interior-design-office.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div>
+                                  <img
+                                    class="h-auto max-w-full rounded-lg"
+                                    src="./assets/commercial-image/3d-rendering-modern-luxury-hotel-office-reception-meeting-lounge.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div>
+                                  <img
+                                    class="h-auto max-w-full rounded-lg"
+                                    src="./assets/commercial-image/cozy-lobby-with-bookshelf.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                
+                              </div>
+
+                             
+                              <div class="dmach-after-posts"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div> -->
+                  </div>
+                  <!-- slider div -->
+                  <div class="et_pb_section et_pb_section_14 et_section_regular">
+                    <!-- <div class="et_pb_row et_pb_row_11">
+                        <div
+                          class="et_pb_column et_pb_column_4_4 et_pb_column_16 et_pb_css_mix_blend_mode_passthrough et-last-child"
+                        >
+                          <div
+                            class="et_pb_module et_pb_divider et_pb_divider_4 et_pb_divider_position_ et_pb_space"
+                          >
+                            <div class="et_pb_divider_internal"></div>
+                          </div>
+                          <div
+                            class="et_pb_module et_pb_text et_pb_text_13 et_pb_text_align_right et_pb_bg_layout_light"
+                          >
+                            <div class="et_pb_text_inner">
+                              <p>What Makes EN-DECOR Different</p>
+                            </div>
+                          </div>
+                          <div
+                            class="et_pb_module et_pb_text et_pb_text_14 et_pb_text_align_right et_pb_bg_layout_light"
+                          >
+                            <div class="et_pb_text_inner">
+                              <p>
+                                FORward-Thinking Approach Award Winning Team
+                                Collaborative Process
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div> -->
+                    <div class="et_pb_row et_pb_row_12">
+                      <div
+                        class="et_pb_column et_pb_column_4_4 et_pb_column_17 et_pb_css_mix_blend_mode_passthrough et-last-child bg-white pt-[0rem]">
+                        <div class="et_pb_module wdc_image_carousel wdc_image_carousel_1">
+                          <div style="margin-top: 0rem !important;">
+                            <div class="wdc-carousel-parent">
+                              <div
+                                class="wdc-carousel wdc-image-carousel-1 wdc-image-carousel wdc-carousel-frontend wdc-lightbox-off w-screen">
+                                <div class="wdc_image_carousel_child wdc_image_carousel_child_4 wdc_et_pb_module">
+                                  <div class="et_pb_module_inner">
+                                    <div
+                                      class="wdc-carousel-item wdc-image-carousel-item wdc-swapped-img-selector wdc-hover--none object-cover">
+                                      <figure class="wdc-lightbox-ctrl">
+                                        <div class="wdc-overlay">
+                                          <span class="wdc-overlay-icon"></span>
+                                        </div>
+                                        <img class="wdc-swapped-img object-cover"
+                                          src="./assets/Gallery/WhatsApp Image 2023-02-16 at 1.33.44 PM.jpeg.jpg"
+                                          alt="En-decor" />
+                                      </figure>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="wdc_image_carousel_child wdc_image_carousel_child_4 wdc_et_pb_module">
+                                  <div class="et_pb_module_inner">
+                                    <div
+                                      class="wdc-carousel-item wdc-image-carousel-item wdc-swapped-img-selector wdc-hover--none object-cover">
+                                      <figure class="wdc-lightbox-ctrl">
+                                        <div class="wdc-overlay">
+                                          <span class="wdc-overlay-icon"></span>
+                                        </div>
+                                        <img class="wdc-swapped-img object-cover"
+                                          src="./assets/square-images/IMG-20231001-WA0068.png" alt="En-decor" />
+                                      </figure>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="wdc_image_carousel_child wdc_image_carousel_child_4 wdc_et_pb_module">
+                                  <div class="et_pb_module_inner">
+                                    <div
+                                      class="wdc-carousel-item wdc-image-carousel-item wdc-swapped-img-selector wdc-hover--none object-cover">
+                                      <figure class="wdc-lightbox-ctrl">
+                                        <div class="wdc-overlay">
+                                          <span class="wdc-overlay-icon"></span>
+                                        </div>
+                                        <img class="wdc-swapped-img object-cover"
+                                          src="./assets/slider-images/desk-3.png" alt="En-decor" />
+                                      </figure>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="wdc_image_carousel_child wdc_image_carousel_child_4 wdc_et_pb_module">
+                                  <div class="et_pb_module_inner">
+                                    <div
+                                      class="wdc-carousel-item wdc-image-carousel-item wdc-swapped-img-selector wdc-hover--none object-cover">
+                                      <figure class="wdc-lightbox-ctrl">
+                                        <div class="wdc-overlay">
+                                          <span class="wdc-overlay-icon"></span>
+                                        </div>
+                                        <img class="wdc-swapped-img object-cover"
+                                          src="./assets/slider-images/IMG-20230925-WA0062.png" alt="En-decor" />
+                                      </figure>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="wdc_image_carousel_child wdc_image_carousel_child_4 wdc_et_pb_module">
+                                  <div class="et_pb_module_inner">
+                                    <div
+                                      class="wdc-carousel-item wdc-image-carousel-item wdc-swapped-img-selector wdc-hover--none object-cover">
+                                      <figure class="wdc-lightbox-ctrl">
+                                        <div class="wdc-overlay">
+                                          <span class="wdc-overlay-icon"></span>
+                                        </div>
+                                        <img class="wdc-swapped-img object-cover"
+                                          src="./assets/square-images/IMG-20231001-WA0035.png" alt="En-decor" />
+                                      </figure>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="wdc_image_carousel_child wdc_image_carousel_child_4 wdc_et_pb_module">
+                                  <div class="et_pb_module_inner">
+                                    <div
+                                      class="wdc-carousel-item wdc-image-carousel-item wdc-swapped-img-selector wdc-hover--none object-cover">
+                                      <figure class="wdc-lightbox-ctrl">
+                                        <div class="wdc-overlay">
+                                          <span class="wdc-overlay-icon"></span>
+                                        </div>
+                                        <img class="wdc-swapped-img object-cover"
+                                          src="./assets/commercial-image/cozy-lobby-with-bookshelf.jpg"
+                                          alt="En-decor" />
+                                      </figure>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="wdc_image_carousel_child wdc_image_carousel_child_4 wdc_et_pb_module">
+                                  <div class="et_pb_module_inner">
+                                    <div
+                                      class="wdc-carousel-item wdc-image-carousel-item wdc-swapped-img-selector wdc-hover--none object-cover">
+                                      <figure class="wdc-lightbox-ctrl">
+                                        <div class="wdc-overlay">
+                                          <span class="wdc-overlay-icon"></span>
+                                        </div>
+                                        <img class="wdc-swapped-img object-cover"
+                                          src="./assets/commercial-image/modern-interior-design-office.jpg"
+                                          alt="En-decor" />
+                                      </figure>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="wdc_image_carousel_child wdc_image_carousel_child_4 wdc_et_pb_module">
+                                  <div class="et_pb_module_inner">
+                                    <div
+                                      class="wdc-carousel-item wdc-image-carousel-item wdc-swapped-img-selector wdc-hover--none object-cover">
+                                      <figure class="wdc-lightbox-ctrl">
+                                        <div class="wdc-overlay">
+                                          <span class="wdc-overlay-icon"></span>
+                                        </div>
+                                        <img class="wdc-swapped-img object-cover"
+                                          src="./assets/residencial-images/r3.jpg" alt="En-decor" />
+                                      </figure>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="wdc_image_carousel_child wdc_image_carousel_child_4 wdc_et_pb_module">
+                                  <div class="et_pb_module_inner">
+                                    <div
+                                      class="wdc-carousel-item wdc-image-carousel-item wdc-swapped-img-selector wdc-hover--none object-cover">
+                                      <figure class="wdc-lightbox-ctrl">
+                                        <div class="wdc-overlay">
+                                          <span class="wdc-overlay-icon"></span>
+                                        </div>
+                                        <img class="wdc-swapped-img object-cover"
+                                          src="./assets/same-size-image/IMG-20230925-WA0003.png" alt="En-decor" />
+                                      </figure>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="wdc_image_carousel_child wdc_image_carousel_child_4 wdc_et_pb_module">
+                                  <div class="et_pb_module_inner">
+                                    <div
+                                      class="wdc-carousel-item wdc-image-carousel-item wdc-swapped-img-selector wdc-hover--none object-cover">
+                                      <figure class="wdc-lightbox-ctrl">
+                                        <div class="wdc-overlay">
+                                          <span class="wdc-overlay-icon"></span>
+                                        </div>
+                                        <img class="wdc-swapped-img object-cover"
+                                          src="./assets/slider-images/IMG-20231001-WA0070.png" alt="En-decor" />
+                                      </figure>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="wdc_image_carousel_child wdc_image_carousel_child_5 wdc_et_pb_module">
+                                  <div class="et_pb_module_inner">
+                                    <div
+                                      class="wdc-carousel-item wdc-image-carousel-item wdc-swapped-img-selector wdc-hover--none object-cover">
+                                      <figure class="wdc-lightbox-ctrl">
+                                        <div class="wdc-overlay">
+                                          <span class="wdc-overlay-icon"></span>
+                                        </div>
+                                        <img src="./assets/slider-images/IMG-20230925-WA0045.png"
+                                          class="wdc-swapped-img object-cover"
+                                          data-mfp-src="./assets/same-size-image/IMG-20231001-WA0062.png" alt="En-decor"
+                                          style="
+                                              object-fit: cover !important;
+                                            " />
+                                      </figure>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="wdc_image_carousel_child wdc_image_carousel_child_5 wdc_et_pb_module">
+                                  <div class="et_pb_module_inner">
+                                    <div
+                                      class="wdc-carousel-item wdc-image-carousel-item wdc-swapped-img-selector wdc-hover--none object-cover">
+                                      <figure class="wdc-lightbox-ctrl">
+                                        <div class="wdc-overlay">
+                                          <span class="wdc-overlay-icon"></span>
+                                        </div>
+                                        <img src="./assets/slider-images/slider1.jpg"
+                                          class="wdc-swapped-img object-cover"
+                                          data-mfp-src="./assets/same-size-image/IMG-20231001-WA0062.png" alt="En-decor"
+                                          style="
+                                              object-fit: cover !important;
+                                            " />
+                                      </figure>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="wdc_image_carousel_child wdc_image_carousel_child_5 wdc_et_pb_module">
+                                  <div class="et_pb_module_inner">
+                                    <div
+                                      class="wdc-carousel-item wdc-image-carousel-item wdc-swapped-img-selector wdc-hover--none object-cover">
+                                      <figure class="wdc-lightbox-ctrl">
+                                        <div class="wdc-overlay">
+                                          <span class="wdc-overlay-icon"></span>
+                                        </div>
+                                        <img src="./assets/slider-images/slider2.jpg"
+                                          class="wdc-swapped-img object-cover"
+                                          data-mfp-src="./assets/same-size-image/IMG-20231001-WA0062.png" alt="En-decor"
+                                          style="
+                                              object-fit: cover !important;
+                                            " />
+                                      </figure>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="wdc_image_carousel_child wdc_image_carousel_child_5 wdc_et_pb_module">
+                                  <div class="et_pb_module_inner">
+                                    <div
+                                      class="wdc-carousel-item wdc-image-carousel-item wdc-swapped-img-selector wdc-hover--none object-cover">
+                                      <figure class="wdc-lightbox-ctrl">
+                                        <div class="wdc-overlay">
+                                          <span class="wdc-overlay-icon"></span>
+                                        </div>
+                                        <img src="./assets/slider-images/slider3.jpg"
+                                          class="wdc-swapped-img object-cover"
+                                          data-mfp-src="./assets/same-size-image/IMG-20231001-WA0062.png" alt="En-decor"
+                                          style="
+                                              object-fit: cover !important;
+                                            " />
+                                      </figure>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="wdc_image_carousel_child wdc_image_carousel_child_5 wdc_et_pb_module">
+                                  <div class="et_pb_module_inner">
+                                    <div
+                                      class="wdc-carousel-item wdc-image-carousel-item wdc-swapped-img-selector wdc-hover--none object-cover">
+                                      <figure class="wdc-lightbox-ctrl">
+                                        <div class="wdc-overlay">
+                                          <span class="wdc-overlay-icon"></span>
+                                        </div>
+                                        <img src="./assets/slider-images/slider4.jpg"
+                                          class="wdc-swapped-img object-cover"
+                                          data-mfp-src="./assets/same-size-image/IMG-20231001-WA0062.png" alt="En-decor"
+                                          style="
+                                              object-fit: cover !important;
+                                            " />
+                                      </figure>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-          </main>
-      </section>
-
-
-
-
-
+            </div>
+          </article>
+        </div>
 
         <footer class="et-l et-l--footer">
           <div class="et_builder_inner_content et_pb_gutters3">
@@ -10199,15 +10616,15 @@
                               width: 100%;
                             ">
                         <a style="color: #be5933 !important;" href="/">HOME</a>
-                        <a style="color: #be5933 !important;" href="About.html">ABOUT</a>
-                        <a style="color: #be5933 !important;" href="./services.html">SERVICES</a>
+                        <a style="color: #be5933 !important;" href="leading_interior_design_company.html">ABOUT</a>
+                        <a style="color: #be5933 !important;" href="./residential_and_commercial_interior_designers.html">SERVICES</a>
 
                         <a style="color: #be5933 !important; text-transform: uppercase !important;"
-                          href="./blogs.html">BLOGS</a>
-                        <a style="color: #be5933 !important;" href="./projects.html">PROJECTS</a>
+                          href="./best_design_consultants.html">BLOGS</a>
+                        <a style="color: #be5933 !important;" href="./customized_interior_design_and_furniture_projects.html">PROJECTS</a>
 
 
-                        <a style="color: #be5933 !important;" href="./contact.html">CONTACT</a>
+                        <a style="color: #be5933 !important;" href="./contact_us_for_best_interior_designers.html">CONTACT</a>
                       </p>
                     </div>
                   </div>
@@ -10342,9 +10759,9 @@
                       <p>
                         <a href="/">HOME</a>
                         <br />
-                        <a href="./services.html">SERVICES</a>
+                        <a href="./residential_and_commercial_interior_designers.html">SERVICES</a>
                         <br />
-                        <a href="projects.html">PROJECTS</a>
+                        <a href="customized_interior_design_and_furniture_projects.html">PROJECTS</a>
                       </p>
                     </div>
                   </div>
@@ -10352,11 +10769,11 @@
                     class="et_pb_module et_pb_text et_pb_text_3_tb_footer et_pb_text_align_left et_pb_bg_layout_light">
                     <div class="et_pb_text_inner">
                       <p>
-                        <a href="./About.html">ABOUT</a>
+                        <a href="./leading_interior_design_company.html">ABOUT</a>
                         <br>
-                        <a href="./blogs.html">Blogs</a>
+                        <a href="./best_design_consultants.html">Blogs</a>
                         <br>
-                        <a href="./contact.html">CONTACT</a>
+                        <a href="./contact_us_for_best_interior_designers.html">CONTACT</a>
                       </p>
                     </div>
                   </div>
